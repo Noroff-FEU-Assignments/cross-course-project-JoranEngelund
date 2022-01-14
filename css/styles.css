@@ -100,6 +100,9 @@ a {
     justify-content: center;
   }
 
+  .slogan-img {
+    height: auto;
+  }
   .login-img {
     margin: 20px 0 20px 0px;
   }
