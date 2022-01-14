@@ -9,53 +9,53 @@
 /*Global styles*/
 
 body {
-    min-width: 1000px;
-    min-height: 100vh;
-    font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;
-    background-color: #03173a;
-    color: #faf7ff;
+  min-height: 100vh;
+  font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  background-color: #03173a;
+  color: #faf7ff;
 }
 
-
 header {
-    display: flex;
-    min-width: 100vh;
-    box-shadow: 10px 15px 90px 0 black;
+  display: flex;
+  min-width: auto;
+  box-shadow: 10px 15px 90px 0 black;
 }
 
 footer {
-    display: flex;
-    font-size: 28px;
-    text-align: center;
-    flex-direction: row;
-    justify-content: center;
-    margin: 50px auto auto auto;
+  display: flex;
+  font-size: 28px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px auto auto auto;
 }
 
 footer a {
-
-    text-decoration: none;
-    color: #faf7ff; center;
-    padding: 10px;
+  text-decoration: none;
+  color: #faf7ff;
+  items-align: center;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
 }
 
-
 .logo {
-    max-width: 65%;
-    flex: 1;
+  max-width: 65%;
+  flex: 1;
 }
 
 .cta {
-    color: #03173a;
-    text-decoration: none;
-    background-color: #ffffff;
-    font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
-    border: 4px solid #03173a;
-    box-shadow: 0 3px 6px 0 black;
-    padding: 2px 33px;
-    border-radius: 17px;
-    font-size: 30px;
+  color: #03173a;
+  text-decoration: none;
+  background-color: #ffffff;
+  font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
+  border: 4px solid #03173a;
+  box-shadow: 0 3px 6px 0 black;
+  padding: 2px 33px;
+  border-radius: 17px;
+  font-size: 30px;
 }
 .slogan {
   display: flex;
@@ -63,12 +63,11 @@ footer a {
   align-items: center;
 }
 
-.slogan-img{
-  flex: 1;
+.slogan-img {
   height: auto;
+  flex: 1;
   max-width: 60%;
   margin: 30px 0px auto;
-  display: block;
 }
 
 .content {
@@ -76,7 +75,7 @@ footer a {
   margin: auto 50px;
 }
 
-.login-portal_img{
+.login-portal_img {
   margin: auto 1em;
   text-align: center;
 }
@@ -91,9 +90,22 @@ footer a {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 400px) {
-    .content {
-        flex-wrap: wrap;
-    }
-    
+@media only screen and (max-width: 750px) {
+  header {
+    justify-content: center;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .login-portal_img a {
+    display: block;
+  }
+
+  .cta {
+    font-size: 20px;
+    padding: 1px 17px;
+  }
 }
