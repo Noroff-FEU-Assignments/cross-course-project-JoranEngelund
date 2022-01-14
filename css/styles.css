@@ -10,6 +10,9 @@
 
 body {
   min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
   background-color: #03173a;
@@ -28,7 +31,7 @@ footer {
   text-align: center;
   flex-direction: row;
   justify-content: center;
-  margin: 50px auto auto auto;
+  margin-top: auto;
 }
 
 footer a {
@@ -72,7 +75,8 @@ a {
 
 .content {
   display: flex;
-  margin: auto 50px;
+  justify-content: center;
+  margin: auto 30px;
 }
 
 .login-portal_img {
@@ -83,6 +87,10 @@ a {
 .login-img {
   max-width: 70%;
   margin: 0 0 5px;
+}
+
+.login_anchor-image {
+  display: block;
 }
 
 .slogan-copy p {
@@ -106,10 +114,6 @@ a {
 
   .login-img {
     margin: 20px 0 20px 0px;
-  }
-
-  .login_anchor-image {
-    display: block;
   }
 
   .cta {
