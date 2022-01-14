@@ -90,3 +90,10 @@ footer a {
   font-family: "Open Sans Semibold Italic";
   font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-wrap: wrap;
+    }
+    
+}
