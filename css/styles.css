@@ -10,7 +10,7 @@
 
 body {
   min-height: 100vh;
-  font-family: "Open Sans Bold" Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
   background-color: #03173a;
   color: #faf7ff;
@@ -22,28 +22,32 @@ header {
   box-shadow: 10px 15px 90px 0 black;
 }
 
-footer {
-    text-align: center;
-    padding: 10px
+footer,
+a {
+  text-decoration: none;
+  color: #faf7ff;
+  text-align: center;
+  padding: 10px;
 }
 a {
   text-decoration: none;
-  te
 }
 
 .logo {
-  max-width: 74%;
+  max-width: 65%;
   flex: 1;
 }
 
 .cta {
-    text-decoration: none;
-    background-color: #FFFFFF;
-    font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
-    border: 4px solid #03173A;
-    box-shadow: 0 3px 6px 0 black;
-    padding: 5px 20px;
-    border-radius: 10px;
+  color: #03173a;
+  text-decoration: none;
+  background-color: #ffffff;
+  font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
+  border: 4px solid #03173a;
+  box-shadow: 0 3px 6px 0 black;
+  padding: 2px 33px;
+  border-radius: 17px;
+  font-size: 30px;
 }
 .slogan {
   display: flex;
@@ -53,28 +57,26 @@ a {
 
 .slogan-img {
   flex: 1;
-  max-width: 66%;
-  margin: 50px 0px auto;
+  max-width: 60%;
+  margin: 30px 0px auto;
 }
 
 .content {
-    display: flex;
-    margin: auto 50px;
+  display: flex;
+  margin: auto 50px;
 }
 
-.login-portal_img{
-    margin: auto 1em;
-    text-align: center;
+.login-portal_img {
+  margin: auto 1em;
+  text-align: center;
 }
 
 .login-img {
-    max-width: 70%;
-    margin: 0 0 24px;
+  max-width: 70%;
+  margin: 0 0 5px;
 }
 
 .slogan-copy p {
   font-family: "Open Sans Semibold Italic";
   font-size: 20px;
 }
-
-
