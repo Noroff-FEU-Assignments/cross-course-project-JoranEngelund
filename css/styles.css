@@ -7,11 +7,13 @@
   src: url(/fonts/OpenSans-SemiBoldItalic.ttf) format("truetype");
 }
 /*Global styles*/
+
 body {
   min-height: 100vh;
   font-family: "Open Sans Bold" Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
   background-color: #03173a;
+  color: #faf7ff;
 }
 
 header {
@@ -19,11 +21,24 @@ header {
   box-shadow: 10px 15px 90px 0 black;
 }
 
+footer {
+    text-align: center;
+    padding: 10px
+}
+a {
+  text-decoration: none;
+  te
+}
+
 .logo {
   max-width: 74%;
   flex: 1;
 }
 
+.cta {
+    text-decoration: none;
+    background-color: ;
+}
 .slogan {
   display: flex;
   flex-direction: column;
@@ -32,6 +47,28 @@ header {
 
 .slogan-img {
   flex: 1;
-  max-width: 66%;
+  max-width: 150vh;
   margin: 50px 0px auto;
 }
+
+.content {
+    display: flex;
+    margin: auto 50px;
+}
+
+.login-portal_img{
+    margin: auto 1em;
+
+}
+
+.login-img {
+    max-width: 70%;
+}
+
+.slogan-copy p {
+    flex: 1;
+  font-family: "Open Sans Semibold Italic";
+  font-size: 17px;
+}
+
+
