@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(/fonts/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Open Sans Semibold Italic";
+  src: url(/fonts/OpenSans-SemiBoldItalic.ttf) format("truetype");
+}
+/*Global styles*/
+body {
+  min-height: 100vh;
+  font-family: "Open Sans Bold" Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  background-color: #03173a;
+}
+
+header {
+  display: flex;
+  box-shadow: 10px 15px 90px 0 black;
+}
+
+.logo {
+  max-width: 206px;
+  flex: 1;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan-img {
+  flex: 1;
+  max-width: 66%;
+  margin: 50px 0px auto;
+}
