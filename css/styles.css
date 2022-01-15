@@ -125,7 +125,7 @@ footer a {
     padding: 1px 30px;
   }
 
-  cta:active {
+  cta:enabled {
     box-shadow: inset 25px 25px 100px #f54500, 0 3px 6px 0 black;
   }
   footer {
