@@ -108,8 +108,8 @@ a {
     justify-content: center;
   }
 
-  .slogan-img {
-    height: 30%;
+  .slogan {
+    height: auto;
   }
 
   .login-img {
