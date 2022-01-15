@@ -110,6 +110,7 @@ a {
   }
 
   .slogan-img {
+    object-fit: cover;
   }
 
   .login-img {
