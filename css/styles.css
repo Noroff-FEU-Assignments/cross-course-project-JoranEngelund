@@ -108,8 +108,8 @@ a {
     justify-content: center;
   }
 
-  .slogan {
-    height: auto;
+  .slogan-img {
+    max-width: 30%;
   }
 
   .login-img {
