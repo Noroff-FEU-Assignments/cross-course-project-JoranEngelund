@@ -6,8 +6,8 @@
   font-family: "Open Sans Semibold Italic";
   src: url(/fonts/OpenSans-SemiBoldItalic.ttf) format("truetype");
 }
-/*Global styles*/
 
+/*Global styles*/
 body {
   min-height: 100vh;
   width: 100%;
@@ -43,7 +43,7 @@ a {
   max-width: 65%;
   flex: 1;
 }
-
+/*Buttons*/
 .cta {
   color: #03173a;
   text-decoration: none;
@@ -98,20 +98,19 @@ a {
   font-size: 20px;
 }
 
+/*Screen resize*/
 @media only screen and (max-width: 750px) {
   header {
     justify-content: center;
+  }
+  header a {
+    margin-left: 86px;
   }
 
   .content {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .slogan-img {
-    max-width: 30%;
-  }
-
   .login-img {
     margin: 20px 0 20px 0px;
   }
