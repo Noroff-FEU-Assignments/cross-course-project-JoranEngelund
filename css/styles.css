@@ -7,6 +7,21 @@
   src: url(/fonts/OpenSans-SemiBoldItalic.ttf) format("truetype");
 }
 
+/*Color Palette*/
+/*
+#03173A - Main purple color
+#135375 - Secondary blue color
+#FAF7FF - Copy color
+#F54500 - Hover color
+#03173A - Border color
+*/
+
+/*Fonts*/
+/*
+"Open Sans Bold" - Main font
+"Open Sans Semibold Italic" - Seconday font
+*/
+
 /*Global styles*/
 body {
   min-height: 100vh;
@@ -26,7 +41,7 @@ header {
 }
 
 .logo {
-  max-width: 65%;
+  max-width: 55%;
 }
 
 footer {
@@ -103,7 +118,7 @@ footer a {
   }
 
   header a {
-    margin-left: 86px;
+    margin-left: 153px;
   }
 
   .content {
