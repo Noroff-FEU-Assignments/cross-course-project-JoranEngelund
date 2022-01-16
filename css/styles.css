@@ -83,7 +83,7 @@ footer a {
 
 .slogan-img {
   max-width: 60%;
-  margin: 30px 0px auto;
+  margin: 30px auto auto auto;
 }
 
 .content {
@@ -147,11 +147,11 @@ footer a {
   }
 
   footer {
-    font-size: 22px;
+    font-size: 1.0625em;
   }
 
   .slogan-copy p {
-    font-size: 15px;
+    font-size: 0.9375em;
   }
   .copy-2 {
     margin: 27px auto auto;
