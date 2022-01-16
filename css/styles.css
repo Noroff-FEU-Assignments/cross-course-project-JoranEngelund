@@ -37,7 +37,7 @@ body {
 header {
   display: flex;
   min-width: auto;
-  box-shadow: 10px 15px 90px 0 black;
+  box-shadow: 0.625em 0.9375em 5.625em 0 black;
 }
 
 .logo {
@@ -46,7 +46,7 @@ header {
 
 footer {
   display: flex;
-  font-size: 20px;
+  font-size: 1.25em;
   justify-content: center;
   margin-top: auto;
 }
@@ -54,7 +54,7 @@ footer {
 footer a {
   text-decoration: none;
   color: #faf7ff;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 /*Buttons*/
@@ -125,6 +125,7 @@ footer a {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .login-img {
     margin: 20px 0 20px 0px;
   }
@@ -151,6 +152,14 @@ footer a {
 
   .slogan-copy p {
     font-size: 15px;
-    margin: 20px auto auto;
+  }
+  .copy-2 {
+    margin: 27px auto auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header a {
+    margin-left: 79px;
   }
 }
