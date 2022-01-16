@@ -67,7 +67,7 @@ footer a {
   box-shadow: 0 3px 6px 0 black;
   padding: 2px 33px;
   border-radius: 17px;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 .cta:hover {
@@ -93,12 +93,12 @@ footer a {
 }
 
 .login-portal_img {
-  margin: auto 1em;
+  margin: auto 5em;
   text-align: center;
 }
 
 .login-img {
-  max-width: 70%;
+  max-width: 100%;
   margin: 0 0 5px;
 }
 
