@@ -43,7 +43,9 @@ header {
 .logo {
   max-width: 55%;
 }
-
+a {
+  text-decoration: none;
+}
 footer {
   display: flex;
   font-size: 1.25em;
@@ -52,7 +54,6 @@ footer {
 }
 
 footer a {
-  text-decoration: none;
   color: #faf7ff;
   padding: 0.625em;
 }
@@ -60,7 +61,6 @@ footer a {
 /*Buttons*/
 .cta {
   color: #03173a;
-  text-decoration: none;
   background-color: #ffffff;
   font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
   border: 4px solid #03173a;
@@ -108,7 +108,7 @@ footer a {
 
 .slogan-copy p {
   font-family: "Open Sans Semibold Italic";
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 /*Screen resize*/
