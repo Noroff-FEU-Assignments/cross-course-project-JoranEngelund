@@ -89,7 +89,8 @@ footer a {
 .content {
   display: flex;
   justify-content: center;
-  margin: auto 30px;
+  max-width: 1072px;
+  margin: 0px auto;
 }
 
 .login-portal_img {
@@ -124,6 +125,7 @@ footer a {
   .content {
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto 30px;
   }
 
   .login-img {
