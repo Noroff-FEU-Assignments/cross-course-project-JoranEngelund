@@ -158,7 +158,7 @@ footer a {
 
 .login__img {
   max-width: 60%;
-  margin: 0px auto -5px auto;
+  margin: -10px auto -5px auto;
 }
 
 .form_input_field {
@@ -167,6 +167,10 @@ footer a {
   border: none;
   border-bottom: 2px solid #faf7ff;
   margin: 5px auto;
+}
+
+.form-label {
+  color: #faf7ff;
 }
 
 .login-btn {
