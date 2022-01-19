@@ -65,6 +65,11 @@ footer {
   font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.cta,
+.login-title {
+  text-transform: uppercase;
+}
+
 footer a {
   color: #faf7ff;
   padding: 0.625em;
@@ -85,7 +90,6 @@ footer a {
   padding: 2px 33px;
   border-radius: 17px;
   font-size: 1.875em;
-  text-transform: uppercase;
 }
 
 .cta:hover {
@@ -170,7 +174,6 @@ footer a {
 }
 
 .login-title {
-  text-transform: uppercase;
   margin: 10px auto;
 }
 
