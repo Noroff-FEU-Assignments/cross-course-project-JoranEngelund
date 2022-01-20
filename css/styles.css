@@ -116,6 +116,12 @@ footer a {
   padding: 10px 10px;
 }
 
+.cta-create_account-small {
+  font-size: 0.8em;
+  padding: 7px 15px;
+}
+}
+
 /*Home page*/
 .slogan {
   display: flex;
@@ -302,8 +308,14 @@ footer a {
   /*Create Account page*/
 
   .cta-create_account-medium {
-    font-size: 0.9em;
-    padding: 10px 10px;
+    font-size: 0.7em;
+    padding: 8px 8px;
+  }
+  
+  .cta-create_account-small {
+    font-size: 0.6em;
+    padding: 6px 15px;
+}
   }
 }
 
