@@ -133,6 +133,7 @@ footer a {
   font-size: 5em;
   margin: 30px auto 15px auto;
   font-family: "Open Sans Light Italic", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 .content {
