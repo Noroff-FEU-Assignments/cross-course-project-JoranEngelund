@@ -258,7 +258,7 @@ footer a {
   }
 
   .login__img {
-    max-width: 50%;
+    margin: -28px auto -5px auto;
   }
 
   /*About page*/
