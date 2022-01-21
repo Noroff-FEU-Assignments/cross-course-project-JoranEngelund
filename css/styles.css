@@ -46,7 +46,8 @@ header {
   box-shadow: 0.625em 0.9375em 5.625em 0 black;
 }
 
-.logo, .logo-logged-in {
+.logo, 
+.logo-logged-in {
   max-width: 55%;
 }
 a {
