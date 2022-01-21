@@ -46,7 +46,7 @@ header {
   box-shadow: 0.625em 0.9375em 5.625em 0 black;
 }
 
-.logo, 
+.logo,
 .logo-logged-in {
   max-width: 55%;
 }
@@ -121,7 +121,6 @@ footer a {
 .cta-create_account-small {
   font-size: 0.8em;
   padding: 7px 15px;
-}
 }
 
 /*Home page*/
@@ -231,6 +230,13 @@ footer a {
   font-size: 3em;
 }
 
+/*Movie page*/
+
+section div,
+a {
+  display: block;
+}
+
 /*Screen resize*/
 @media only screen and (max-width: 950px) {
   header {
@@ -314,12 +320,11 @@ footer a {
     font-size: 0.6em;
     padding: 7px 4px;
   }
-  
+
   .cta-create_account-small {
     font-size: 0.5em;
     padding: 6px 15px;
- }
-
+  }
 }
 
 @media only screen and (max-width: 480px) {
