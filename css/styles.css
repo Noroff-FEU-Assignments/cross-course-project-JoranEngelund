@@ -46,11 +46,12 @@ header {
   box-shadow: 0.625em 0.9375em 5.625em 0 black;
 }
 
-.logo {
+.logo, .logo-logged-in {
   max-width: 55%;
 }
 a {
   text-decoration: none;
+  color: #faf7ff;
 }
 
 footer {
@@ -235,7 +236,7 @@ footer a {
     justify-content: center;
   }
 
-  header a {
+  .anchor-logo {
     margin-left: 153px;
   }
 
@@ -322,7 +323,8 @@ footer a {
 
 @media only screen and (max-width: 480px) {
   /*Home page*/
-  header a {
+
+  .anchor-logo {
     margin-left: 125px;
   }
 
