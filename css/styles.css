@@ -44,6 +44,7 @@ header {
   display: flex;
   min-width: auto;
   box-shadow: 0.625em 0.9375em 5.625em 0 black;
+  background-color: #03173a;
 }
 
 .logo,
