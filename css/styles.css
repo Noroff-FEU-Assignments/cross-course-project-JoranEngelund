@@ -232,11 +232,6 @@ footer a {
 
 /*Movie page*/
 
-section div,
-a {
-  display: block;
-}
-
 /*Screen resize*/
 @media only screen and (max-width: 950px) {
   header {
