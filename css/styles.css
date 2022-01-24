@@ -45,12 +45,16 @@ header {
   min-width: auto;
   box-shadow: 0.625em 0.9375em 5.625em 0 black;
   background-color: #03173a;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .logo,
 .logo-logged-in {
   max-width: 55%;
 }
+
 a {
   text-decoration: none;
   color: #faf7ff;
@@ -126,7 +130,7 @@ footer a {
 }
 
 .cta_play-now {
-  font-size: 1.375em;
+  font-size: 1em;
   padding: 5px 23px;
 }
 
@@ -287,6 +291,9 @@ footer a {
   grid-area: vertical-nav;
   background-color: #135375;
   min-width: 290px;
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
 }
 
 .vertical-nav nav {
@@ -310,7 +317,7 @@ ul li {
   grid-area: movies;
   display: flex;
   flex-wrap: wrap;
-  margin: auto auto auto 100px;
+  margin: auto auto auto 291px;
 }
 
 .movie-item {
@@ -347,7 +354,7 @@ ul li {
 }
 
 /*Screen resize*/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 990px) {
   .centered-logo {
     justify-content: center;
   }
@@ -433,6 +440,24 @@ ul li {
   .cta-create_account-small {
     font-size: 0.5em;
     padding: 6px 15px;
+  }
+
+  /*Movie page*/
+
+  #search {
+    display: none;
+  }
+
+  .header-navigation {
+    font-size: 1.5em;
+  }
+  .cta_play-now {
+    font-size: 1em;
+    padding: 1px 10px;
+  }
+
+  .movie-item {
+    width: calc(50% - 10px);
   }
 }
 
