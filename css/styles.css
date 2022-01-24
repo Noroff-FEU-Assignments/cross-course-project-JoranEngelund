@@ -70,7 +70,8 @@ footer {
 }
 
 .cta,
-.login-title {
+.login-title,
+.header-item {
   text-transform: uppercase;
 }
 
@@ -233,9 +234,70 @@ footer a {
 
 /*Movie page*/
 
+.anchor-size {
+  width: 114px;
+}
+
+.logo-movies {
+  width: 151%;
+}
+
+.movie-header {
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+  font-size: 2em;
+  align-items: flex-end;
+}
+
+.header-item {
+  padding: 0 15px 0 0;
+}
+
+#search {
+  font-size: 0.7em;
+}
+
+.profile-picture-small {
+  margin-bottom: -9px;
+  width: 9%;
+}
+
+.profile-picture-watcher-small {
+  width: 90%;
+}
+
+.signout-icon {
+  font-size: 1.4em;
+}
+
+.movies {
+  display: grid;
+  grid-template-areas: "vertical-nav movies movies movies movies";
+}
+
+.vertical-nav {
+  grid-area: vertical-nav;
+  background-color: #135375;
+}
+
+.movie-section {
+  grid-area: movies;
+  display: flex;
+}
+
+.movie-item {
+  width: calc(33, 33% - 10px);
+  text-align: center;
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 40px;
+}
 /*Screen resize*/
 @media only screen and (max-width: 950px) {
-  header {
+  .centered-logo {
     justify-content: center;
   }
 
