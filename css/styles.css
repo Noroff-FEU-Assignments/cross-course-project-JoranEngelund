@@ -125,6 +125,11 @@ footer a {
   padding: 7px 15px;
 }
 
+.cta_play-now {
+  padding: 5px 23px;
+  font-size: 1.375em;
+}
+
 /*Home page*/
 .slogan {
   display: flex;
@@ -286,15 +291,43 @@ footer a {
 .movie-section {
   grid-area: movies;
   display: flex;
+  flex-wrap: wrap;
+  margin: auto 32px auto 65px;
 }
 
 .movie-item {
-  width: calc(33, 33% - 10px);
+  width: calc(33.3333% - 10px);
   text-align: center;
   box-sizing: border-box;
   flex-grow: 1;
-  padding: 40px;
+  padding: 30px;
 }
+
+.page-title,
+.genre-title {
+  width: calc(100%);
+  margin: 25px auto 0px 41px;
+  font-size: 3em;
+}
+
+.genre-title {
+  font-size: 2em;
+  margin-bottom: -25px;
+}
+
+.movie-cover {
+  width: 95%;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  margin: 10px auto;
+}
+
+.movie-rating {
+  font-size: 1.5em;
+}
+
 /*Screen resize*/
 @media only screen and (max-width: 950px) {
   .centered-logo {
