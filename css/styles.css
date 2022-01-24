@@ -451,6 +451,15 @@ ul li {
   .header-navigation {
     font-size: 1.5em;
   }
+
+  .vertical-nav {
+    margin-left: -290px;
+  }
+
+  .movie-section {
+    margin: auto;
+  }
+
   .cta_play-now {
     font-size: 1em;
     padding: 1px 10px;
@@ -458,6 +467,32 @@ ul li {
 
   .movie-item {
     width: calc(50% - 10px);
+    padding: 10px;
+  }
+
+  .movie-cover {
+    width: 55%;
+  }
+
+  .page-title,
+  .genre-title {
+    margin: 32px auto 0px 114px;
+  }
+
+  .page-title {
+    font-size: 2em;
+  }
+
+  .genre-title {
+    font-size: 1.5em;
+  }
+
+  .movie-rating {
+    font-size: 0.8em;
+  }
+
+  .movie-title {
+    font-size: 1em;
   }
 }
 
