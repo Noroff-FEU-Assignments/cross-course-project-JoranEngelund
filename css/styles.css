@@ -299,6 +299,14 @@ footer a {
   z-index: -1;
 }
 
+.hamburger-icon {
+  margin-left: -15px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
 .vertical-nav nav {
   display: flex;
   font-size: 2em;
@@ -459,8 +467,24 @@ ul li {
   .profile-picture-small {
     width: 15%;
   }
+
   .vertical-nav {
     margin-left: -290px;
+  }
+
+  .hamburger-icon {
+    margin-left: 0px;
+    position: fixed;
+    transform: rotate(90deg);
+    font-size: 2em;
+    top: 50%;
+    z-index: 2;
+  }
+
+  #hamburger-menu:checked ~ .vertical-nav {
+    display: block;
+    margin-left: 0px;
+    z-index: 1;
   }
 
   .movie-section {
