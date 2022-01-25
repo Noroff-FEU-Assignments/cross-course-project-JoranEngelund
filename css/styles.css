@@ -364,6 +364,12 @@ ul li {
   font-size: 1.5em;
 }
 
+/*Active navigation*/
+
+.active {
+  text-decoration: underline;
+}
+
 /*Screen resize*/
 @media only screen and (max-width: 990px) {
   .centered-logo {
@@ -493,6 +499,7 @@ ul li {
   .vertical-nav nav h1 {
     display: none;
   }
+
   .movie-section {
     margin: auto;
   }
