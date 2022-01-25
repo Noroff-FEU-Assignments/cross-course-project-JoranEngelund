@@ -569,7 +569,7 @@ ul li {
   #hamburger-menu:checked ~ .vertical-nav {
     top: 36%;
     height: 37%;
-    min-width: 30%;
+    width: 33%;
   }
 
   .page-title {
