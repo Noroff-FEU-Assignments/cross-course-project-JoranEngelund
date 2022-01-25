@@ -477,7 +477,7 @@ ul li {
     position: fixed;
     transform: rotate(90deg);
     font-size: 2em;
-    top: 57vh;
+    top: 350px;
     z-index: 2;
   }
 
@@ -486,8 +486,8 @@ ul li {
     margin-left: 0px;
     z-index: 1;
     background-color: rgba(19, 83, 117, 65%);
-    top: 30vh;
-    height: 63%;
+    top: 185px;
+    height: 363px;
     min-width: 205px;
   }
 
@@ -557,9 +557,16 @@ ul li {
     width: 90%;
   }
 
-  .header-navigation,
+  .header-navigation {
+    font-size: 0.8em;
+  }
   .vertical-nav nav {
     font-size: 1em;
+  }
+
+  .profile-picture-small {
+    margin-bottom: -6px;
+    width: 13%;
   }
 
   .hamburger-icon {
@@ -567,8 +574,8 @@ ul li {
   }
 
   #hamburger-menu:checked ~ .vertical-nav {
-    top: 40vh;
-    height: 37%;
+    top: 252px;
+    height: 240px;
     min-width: 140px;
   }
 
