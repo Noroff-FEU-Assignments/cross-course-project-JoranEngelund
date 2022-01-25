@@ -45,11 +45,13 @@ header {
   min-width: auto;
   box-shadow: 0.625em 0.9375em 5.625em 0 black;
   background-color: #03173a;
+}
+
+.movie-header {
   position: sticky;
   top: 0;
   left: 0;
 }
-
 .logo,
 .logo-logged-in {
   max-width: 55%;
@@ -259,6 +261,7 @@ footer a {
   display: flex;
   font-size: 2em;
   align-items: flex-end;
+  justify-content: end;
 }
 
 .header-item {
@@ -310,7 +313,7 @@ footer a {
 ul li {
   list-style: none;
   margin: 15px auto;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .movie-section {
@@ -450,8 +453,12 @@ ul li {
 
   .header-navigation {
     font-size: 1.5em;
+    justify-content: end;
   }
 
+  .profile-picture-small {
+    width: 15%;
+  }
   .vertical-nav {
     margin-left: -290px;
   }
@@ -471,20 +478,21 @@ ul li {
   }
 
   .movie-cover {
-    width: 55%;
+    width: 85%;
   }
 
   .page-title,
   .genre-title {
-    margin: 32px auto 0px 114px;
+    margin: 32px auto 0px;
+    text-align: center;
   }
 
   .page-title {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .genre-title {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .movie-rating {
@@ -509,7 +517,33 @@ ul li {
   /*About page*/
 
   .about-content {
-    font-size: 0.8em;
     margin: -36px 13px auto;
+  }
+
+  /*Movie page*/
+
+  .logo-movies {
+    width: 90%;
+  }
+
+  .header-navigation {
+    font-size: 1em;
+  }
+  .page-title {
+    font-size: 2.5em;
+  }
+
+  .genre-title {
+    font-size: 1.5em;
+  }
+
+  .cta_play-now,
+  .movie-title,
+  .about-content {
+    font-size: 0.8em;
+  }
+
+  .cta_play-now {
+    padding: 1px 7px;
   }
 }
