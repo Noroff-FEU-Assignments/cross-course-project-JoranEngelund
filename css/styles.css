@@ -486,7 +486,7 @@ ul li {
     margin-left: 0px;
     z-index: 1;
     background-color: rgba(19, 83, 117, 65%);
-    top: 154px;
+    top: 30vh;
     height: 63%;
     min-width: 205px;
   }
@@ -567,7 +567,7 @@ ul li {
   }
 
   #hamburger-menu:checked ~ .vertical-nav {
-    top: 214px;
+    top: 40vh;
     height: 37%;
     min-width: 140px;
   }
