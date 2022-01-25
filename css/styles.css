@@ -136,6 +136,12 @@ footer a {
   padding: 5px 23px;
 }
 
+.cta-profile {
+  padding: 2px 6px;
+  border-radius: 9px;
+  font-size: 0.7em;
+}
+
 /*Home page*/
 .slogan {
   display: flex;
@@ -365,6 +371,65 @@ ul li {
   font-size: 1.5em;
 }
 
+/*Profile page*/
+
+.profile-info {
+  display: flex;
+  margin: 27px 27px auto;
+  flex-grow: 1;
+}
+
+.profile-item-1 {
+  width: calc(23.5%);
+}
+
+.profile-name {
+  font-size: 2.2em;
+}
+
+.profile-item-2 {
+  width: calc(37.5%);
+}
+
+.profile-item-3 {
+  width: calc(50%);
+}
+
+.most-watched {
+  background-color: #135375;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
+  width: 59%;
+  box-shadow: 0 3px 6px black;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profile-movies {
+  width: calc(25% - 10px);
+  padding: 20px;
+}
+
+.profile-movie-rating,
+.profile-movie-title,
+.profile_cta-play-now {
+  font-size: 0.7em;
+}
+
+.profile-movie-title {
+  margin: 5px auto;
+}
+
+.most-watched-movies {
+  font-size: 1.8em;
+  margin: auto;
+}
+
+.profile_cta-play-now {
+  padding: 1px 6px;
+}
+
 /*Active navigation*/
 
 .active {
@@ -539,6 +604,30 @@ ul li {
 
   .movie-title {
     font-size: 1em;
+  }
+
+  /*Profile page*/
+
+  .profile-info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cta-profile {
+    font-size: 0.6em;
+    padding: 1px 2px;
+  }
+
+  .profile-item-2 {
+    width: calc(50%);
+  }
+
+  .quote {
+    font-size: 1em;
+  }
+
+  .most-watched-movies {
+    font-size: 1.5em;
   }
 }
 
