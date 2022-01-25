@@ -485,8 +485,15 @@ ul li {
     display: block;
     margin-left: 0px;
     z-index: 1;
+    background-color: rgba(19, 83, 117, 65%);
+    top: 24%;
+    height: 63%;
+    min-width: 41%;
   }
 
+  .vertical-nav nav h1 {
+    display: none;
+  }
   .movie-section {
     margin: auto;
   }
@@ -550,9 +557,21 @@ ul li {
     width: 90%;
   }
 
-  .header-navigation {
+  .header-navigation,
+  .vertical-nav nav {
     font-size: 1em;
   }
+
+  .hamburger-icon {
+    font-size: 1.3em;
+  }
+
+  #hamburger-menu:checked ~ .vertical-nav {
+    top: 36%;
+    height: 37%;
+    min-width: 30%;
+  }
+
   .page-title {
     font-size: 2.5em;
   }
