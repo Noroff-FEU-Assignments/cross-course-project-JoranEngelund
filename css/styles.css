@@ -477,7 +477,7 @@ ul li {
     position: fixed;
     transform: rotate(90deg);
     font-size: 2em;
-    top: 50%;
+    top: 314px;
     z-index: 2;
   }
 
