@@ -255,6 +255,7 @@ footer a {
 
 .movie-header {
   justify-content: space-between;
+  z-index: 2;
 }
 
 .header-navigation {
@@ -296,7 +297,7 @@ footer a {
   min-width: 290px;
   position: fixed;
   height: 100vh;
-  z-index: -1;
+  z-index: 1;
 }
 
 .hamburger-icon {
