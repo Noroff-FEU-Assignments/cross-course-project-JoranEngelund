@@ -69,7 +69,8 @@ footer {
   margin-top: auto;
 }
 
-.cta,
+/*Hackery, some cta's and forms won't get the "Open Sans font applied, so I need to "hardcode it in*/
+cta,
 .form_input,
 .form_input_field {
   font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
@@ -396,7 +397,6 @@ ul li {
 }
 
 .most-watched {
-  background-color: #135375;
   border-radius: 20px;
   display: flex;
   margin: auto;
@@ -544,7 +544,7 @@ ul li {
   }
 
   .hamburger-icon {
-    margin-left: 0px;
+    margin-left: 0;
     position: fixed;
     transform: rotate(90deg);
     font-size: 2em;
@@ -554,7 +554,7 @@ ul li {
 
   #hamburger-menu:checked ~ .vertical-nav {
     display: block;
-    margin-left: 0px;
+    margin-left: 0;
     z-index: 1;
     background-color: rgba(19, 83, 117, 90%);
     top: 185px;
@@ -598,19 +598,29 @@ ul li {
     font-size: 2em;
   }
 
-  .movie-rating {
-    font-size: 0.8em;
-  }
-
   .movie-title {
     font-size: 1em;
   }
 
+  .movie-rating,
+  .profile-movie-title {
+    font-size: 0.8em;
+  }
   /*Profile page*/
 
   .profile-info {
     flex-wrap: wrap;
     justify-content: center;
+    margin: 63px 27px auto;
+    text-align: center;
+  }
+
+  .profile-picture-normal {
+    width: 100%;
+  }
+
+  .profile-name {
+    font-size: 1.7em;
   }
 
   .cta-profile {
@@ -627,7 +637,11 @@ ul li {
   }
 
   .most-watched-movies {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .profile_cta-play-now {
+    font-size: 0.8em;
   }
 }
 
@@ -656,7 +670,9 @@ ul li {
   .header-navigation {
     font-size: 0.8em;
   }
-  .vertical-nav nav {
+
+  .vertical-nav nav,
+  .profile-name {
     font-size: 1em;
   }
 
@@ -685,11 +701,30 @@ ul li {
 
   .cta_play-now,
   .movie-title,
-  .about-content {
+  .about-content,
+  .quote,
+  .page-title {
     font-size: 0.8em;
   }
 
   .cta_play-now {
     padding: 1px 7px;
+  }
+
+  /*Profile page*/
+
+  .profile-item-2 {
+    width: calc(70%);
+  }
+
+  .cta-profile,
+  .profile-movie-rating,
+  .profile-movie-title,
+  .profile_cta-play-now {
+    font-size: 0.5em;
+  }
+
+  .cta-profile {
+    padding: 1px 2px;
   }
 }
