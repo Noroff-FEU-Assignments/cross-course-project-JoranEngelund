@@ -143,6 +143,9 @@ footer a {
   font-size: 0.7em;
 }
 
+.pay-per-view {
+}
+
 /*Home page*/
 .slogan {
   display: flex;
@@ -435,6 +438,38 @@ ul li {
   margin-bottom: 19px;
 }
 
+/*Movie-Product*/
+
+.producer-info {
+  display: flex;
+  align-items: center;
+}
+
+.movie-product {
+  display: grid;
+  grid-template-areas: "movie-cover movie-info";
+}
+
+.movie-cover {
+  grid-area: movie-cover;
+}
+
+.movie-image {
+  width: 100%;
+}
+
+.movie-product-title {
+  font-size: 2.5em;
+  margin: auto;
+}
+.movie-info {
+  grid-area: movie-info;
+}
+
+.pay-price {
+  display: flex;
+}
+
 /*Active navigation*/
 
 .active {
@@ -708,7 +743,7 @@ ul li {
   .movie-title,
   .about-content,
   .quote,
-  .page-title {
+  .most-watched-movies {
     font-size: 0.8em;
   }
 
