@@ -144,6 +144,8 @@ footer a {
 }
 
 .pay-per-view {
+  font-size: 1.5em;
+  margin-right: 50px;
 }
 
 /*Home page*/
@@ -470,6 +472,22 @@ ul li {
   display: flex;
 }
 
+.pay-per-view_container {
+  align-self: center;
+}
+
+.price {
+  font-size: 2em;
+}
+
+.container-producer-image {
+  width: 12%;
+}
+
+.profile-image_producer {
+  width: 95%;
+}
+
 /*Active navigation*/
 
 .active {
@@ -503,7 +521,7 @@ ul li {
   }
 
   .cta {
-    font-size: 20px;
+    font-size: 1.25em;
     padding: 1px 30px;
   }
 
@@ -634,7 +652,8 @@ ul li {
     font-size: 3em;
   }
 
-  .genre-title {
+  .genre-title,
+  .movie-product-title {
     font-size: 2em;
   }
 
@@ -680,8 +699,46 @@ ul li {
     font-size: 1.3em;
   }
 
-  .profile_cta-play-now {
+  .profile_cta-play-now,
+  .movie-description {
     font-size: 0.8em;
+  }
+
+  /*Movie-product Page*/
+
+  .movie-product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .movie-cover {
+    align-self: center;
+  }
+
+  .producer-info {
+    margin-left: 30px;
+  }
+
+  .movie-info {
+    margin: auto 100px;
+  }
+
+  .pay-price {
+    flex-direction: column-reverse;
+  }
+
+  .pay-per-view_container {
+    margin-left: 53px;
+  }
+
+  .pay-per-view {
+    font-size: 1em;
+    padding: 4px 15px;
+  }
+
+  .price {
+    margin: auto auto 11px auto;
   }
 }
 
@@ -707,7 +764,13 @@ ul li {
     width: 90%;
   }
 
-  .header-navigation {
+  .header-navigation,
+  .cta_play-now,
+  .movie-title,
+  .about-content,
+  .quote,
+  .most-watched-movies,
+  .movie-product-title {
     font-size: 0.8em;
   }
 
@@ -735,16 +798,9 @@ ul li {
     font-size: 2.5em;
   }
 
-  .genre-title {
+  .genre-title,
+  .price {
     font-size: 1.5em;
-  }
-
-  .cta_play-now,
-  .movie-title,
-  .about-content,
-  .quote,
-  .most-watched-movies {
-    font-size: 0.8em;
   }
 
   .cta_play-now {
@@ -766,5 +822,11 @@ ul li {
 
   .cta-profile {
     padding: 1px 2px;
+  }
+
+  /*Movie-product page*/
+
+  .movie-info {
+    margin: auto 10px;
   }
 }
