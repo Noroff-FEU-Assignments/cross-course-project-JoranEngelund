@@ -629,7 +629,6 @@ ul li {
   }
 
   .cta_play-now {
-    font-size: 1em;
     padding: 1px 10px;
   }
 
@@ -657,12 +656,17 @@ ul li {
     font-size: 2em;
   }
 
-  .movie-title {
+  .movie-title,
+  .quote,
+  .pay-per-view,
+  .cta_play-now {
     font-size: 1em;
   }
 
   .movie-rating,
-  .profile-movie-title {
+  .profile-movie-title,
+  .profile_cta-play-now,
+  .movie-description {
     font-size: 0.8em;
   }
   /*Profile page*/
@@ -691,17 +695,8 @@ ul li {
     width: calc(50%);
   }
 
-  .quote {
-    font-size: 1em;
-  }
-
   .most-watched-movies {
     font-size: 1.3em;
-  }
-
-  .profile_cta-play-now,
-  .movie-description {
-    font-size: 0.8em;
   }
 
   /*Movie-product Page*/
@@ -716,16 +711,21 @@ ul li {
     align-self: center;
   }
 
+  .movie-image {
+    width: 60%;
+  }
+
   .producer-info {
     margin-left: 30px;
   }
 
   .movie-info {
-    margin: auto 100px;
+    margin: auto 20px;
   }
 
   .pay-price {
     flex-direction: column-reverse;
+    margin-bottom: 12px;
   }
 
   .pay-per-view_container {
@@ -733,7 +733,6 @@ ul li {
   }
 
   .pay-per-view {
-    font-size: 1em;
     padding: 4px 15px;
   }
 
@@ -816,7 +815,8 @@ ul li {
   .cta-profile,
   .profile-movie-rating,
   .profile-movie-title,
-  .profile_cta-play-now {
+  .profile_cta-play-now,
+  .movie-description {
     font-size: 0.5em;
   }
 
