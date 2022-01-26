@@ -430,6 +430,11 @@ ul li {
   padding: 1px 6px;
 }
 
+.upload {
+  width: calc(100%);
+  margin-bottom: 19px;
+}
+
 /*Active navigation*/
 
 .active {
