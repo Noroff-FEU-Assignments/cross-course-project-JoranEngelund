@@ -70,7 +70,7 @@ footer {
 }
 
 /*Hackery, some cta's and forms won't get the "Open Sans font applied, so I need to "hardcode it in*/
-cta,
+.cta,
 .form_input,
 .form_input_field {
   font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
