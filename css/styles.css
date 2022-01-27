@@ -551,6 +551,7 @@ ul li {
   padding: 20px;
 }
 
+
 /*Active navigation*/
 
 .active {
@@ -804,6 +805,22 @@ ul li {
   .price {
     margin: auto auto 11px auto;
   }
+
+  /*Purchase Successful*/
+
+  .purchase-successful h1 h2  {
+    font-size: 1em;
+  }
+
+  .purchase-successful h3  {
+    font-size: 0.9em;
+  }
+  .purchase-successful h1 + h2 + h3 {
+    margin: 5px auto;
+  }
+
+  .purchase-successful img {
+    width: 50%;
 }
 
 @media only screen and (max-width: 480px) {
