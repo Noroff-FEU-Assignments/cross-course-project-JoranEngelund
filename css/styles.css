@@ -488,6 +488,17 @@ ul li {
   width: 95%;
 }
 
+/*Purchase page*/
+
+.purchase-title,
+.purchase-price {
+  margin: auto;
+}
+
+.purchase-info {
+  margin: 10px auto;
+}
+
 /*Active navigation*/
 
 .active {
