@@ -29,22 +29,43 @@
 
 /*Global styles*/
 
+body,
+header,
+footer,
+.slogan,
+.content,
+.login,
+.contact_page,
+.create_account-page,
+.form_input_type,
+.about-content,
+.header-navigation,
+.vertical-nav nav,
+.movie-section,
+.profile-info,
+.most-watched,
+.pay-price,
+.producer-info {
+  display: flex;
+}
+
+body,
+header {
+  background-color: #03173a;
+}
+
 body {
   min-height: 100vh;
   width: 100%;
-  display: flex;
   flex-direction: column;
   font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
-  background-color: #03173a;
   color: #faf7ff;
 }
 
 header {
-  display: flex;
   min-width: auto;
   box-shadow: 0.625em 0.9375em 5.625em 0 black;
-  background-color: #03173a;
 }
 
 .movie-header {
@@ -63,10 +84,13 @@ a {
 }
 
 footer {
-  display: flex;
   font-size: 1.25em;
-  justify-content: center;
   margin-top: auto;
+}
+
+footer,
+.content {
+  justify-content: center;
 }
 
 /*Hackery, some cta's and forms won't get the "Open Sans font applied, so I need to "hardcode it in*/
@@ -87,12 +111,6 @@ footer a {
   padding: 0.625em;
 }
 
-.back_btn {
-  font-size: 1.9em;
-  color: white;
-  margin: 8px auto auto 10px;
-}
-
 /*Buttons*/
 .cta {
   color: #03173a;
@@ -101,20 +119,27 @@ footer a {
   box-shadow: 0 3px 6px 0 black;
   padding: 2px 33px;
   border-radius: 17px;
-  font-size: 1.875em;
 }
 
 .cta:hover {
   box-shadow: inset 25px 25px 100px #f54500, 0 3px 6px 0 black;
 }
 
+.back_btn {
+  color: white;
+  margin: 8px auto auto 10px;
+}
+
+.cta,
+.back_btn {
+  font-size: 1.9em;
+}
+
 .cta-login-medium {
-  font-size: 1em;
   padding: 7px 39px;
 }
 
 .cta-login-small {
-  font-size: 0.9em;
   padding: 7px 19px;
 }
 
@@ -122,8 +147,17 @@ footer a {
   margin: 15px auto;
 }
 
-.cta-create_account-medium {
+.cta_play-now,
+.cta-login-medium {
+  font-size: 1em;
+}
+
+.cta-create_account-medium,
+.cta-login-small {
   font-size: 0.9em;
+}
+
+.cta-create_account-medium {
   padding: 10px 10px;
 }
 
@@ -133,7 +167,6 @@ footer a {
 }
 
 .cta_play-now {
-  font-size: 1em;
   padding: 5px 23px;
 }
 
@@ -150,7 +183,6 @@ footer a {
 
 /*Home page*/
 .slogan {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -163,8 +195,6 @@ footer a {
 }
 
 .content {
-  display: flex;
-  justify-content: center;
   max-width: 1072px;
   margin: 0px auto;
 }
@@ -193,7 +223,6 @@ footer a {
 .login,
 .contact_page,
 .create_account-page {
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -220,7 +249,6 @@ footer a {
 }
 
 .form_input_type {
-  display: flex;
   align-items: center;
   gap: 5px;
 }
@@ -237,7 +265,6 @@ footer a {
 
 .about-content {
   font-size: 1.1em;
-  display: flex;
   flex-direction: column;
   text-align: left;
   margin: -19px 100px auto;
@@ -271,7 +298,6 @@ footer a {
 }
 
 .header-navigation {
-  display: flex;
   font-size: 2em;
   align-items: flex-end;
   justify-content: end;
@@ -321,7 +347,6 @@ footer a {
 }
 
 .vertical-nav nav {
-  display: flex;
   font-size: 2em;
   flex-direction: column;
   text-align: left;
@@ -339,7 +364,6 @@ ul li {
 
 .movie-section {
   grid-area: movies;
-  display: flex;
   flex-wrap: wrap;
   margin: auto auto auto 291px;
 }
@@ -380,7 +404,6 @@ ul li {
 /*Profile page*/
 
 .profile-info {
-  display: flex;
   margin: 27px 27px auto;
   flex-grow: 1;
 }
@@ -403,7 +426,6 @@ ul li {
 
 .most-watched {
   border-radius: 20px;
-  display: flex;
   margin: auto;
   width: 59%;
   box-shadow: 0 3px 6px black;
@@ -443,7 +465,6 @@ ul li {
 /*Movie-Product*/
 
 .producer-info {
-  display: flex;
   align-items: center;
 }
 
@@ -466,10 +487,6 @@ ul li {
 }
 .movie-info {
   grid-area: movie-info;
-}
-
-.pay-price {
-  display: flex;
 }
 
 .pay-per-view_container {
@@ -525,6 +542,11 @@ ul li {
 
 /*Screen resize*/
 @media only screen and (max-width: 990px) {
+  .about-content,
+  .movie-product {
+    display: flex;
+  }
+
   .centered-logo {
     justify-content: center;
   }
@@ -587,7 +609,6 @@ ul li {
 
   .about-content {
     font-size: 0.91em;
-    display: flex;
     flex-direction: column;
     text-align: left;
     margin: -32px 58px auto;
@@ -731,7 +752,6 @@ ul li {
   /*Movie-product Page*/
 
   .movie-product {
-    display: flex;
     flex-direction: column;
     text-align: center;
   }
