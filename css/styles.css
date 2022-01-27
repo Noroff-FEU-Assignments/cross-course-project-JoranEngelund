@@ -845,6 +845,10 @@ ul li {
     width: 90%;
   }
 
+  .page-title {
+    font-size: 2.5em;
+  }
+
   .header-navigation,
   .cta_play-now,
   .movie-title,
@@ -875,9 +879,6 @@ ul li {
     min-width: 140px;
   }
 
-  .page-title {
-    font-size: 2.5em;
-  }
 
   .genre-title,
   .price {
