@@ -700,6 +700,10 @@ ul li {
     min-width: 205px;
   }
 
+  .vertical-nav nav {
+    font-size: 1.5em;
+  }
+
   .vertical-nav nav h1 {
     display: none;
   }
@@ -845,9 +849,6 @@ ul li {
     width: 90%;
   }
 
-  .page-title {
-    font-size: 2.5em;
-  }
 
   .header-navigation,
   .cta_play-now,
@@ -874,11 +875,14 @@ ul li {
   }
 
   #hamburger-menu:checked ~ .vertical-nav {
-    top: 252px;
-    height: 240px;
+    top: 200px;
+    height: 296px;
     min-width: 140px;
   }
 
+  .page-title {
+    font-size: 2.5em;
+  }
 
   .genre-title,
   .price {
