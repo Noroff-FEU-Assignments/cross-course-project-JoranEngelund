@@ -49,17 +49,70 @@ footer,
   display: flex;
 }
 
+.slogan,
+.login,
+.contact_page,
+.create_account-page,
+.form_input_type,
+.producer-info {
+  align-items: center;
+}
+
 body,
 header {
   background-color: #03173a;
 }
 
+body,
+.slogan,
+.login,
+.contact_page,
+.create_account-page,
+.about-content,
+.vertical-nav nav {
+  flex-direction: column;
+}
+
+body,
+.movie-image {
+  width: 100%;
+}
+
+footer,
+.slogan-copy {
+  font-size: 1.2em;
+}
+
+.about-title,
+.header-navigation,
+.vertical-nav nav,
+.genre-title,
+.price {
+  font-size: 2em;
+}
+
+.page-title,
+.genre-title,
+.upload {
+  width: calc(100%);
+}
+
+.slogan_title,
+.login-portal_img,
+.login,
+.contact_page,
+.create_account-page,
+.about-title,
+.movie-item,
+.most-watched,
+.purchase-successful {
+  text-align: center;
+}
+
 body {
   min-height: 100vh;
-  width: 100%;
-  flex-direction: column;
   font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0px;
+  margin: 0;
   color: #faf7ff;
 }
 
@@ -73,6 +126,7 @@ header {
   top: 0;
   left: 0;
 }
+
 .logo,
 .logo-logged-in {
   max-width: 55%;
@@ -84,7 +138,6 @@ a {
 }
 
 footer {
-  font-size: 1.25em;
   margin-top: auto;
 }
 
@@ -182,16 +235,11 @@ footer a {
 }
 
 /*Home page*/
-.slogan {
-  flex-direction: column;
-  align-items: center;
-}
 
 .slogan_title {
   font-size: 5em;
   margin: 30px auto 15px auto;
   font-family: "Open Sans Light Italic", Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
 }
 
 .content {
@@ -201,7 +249,6 @@ footer a {
 
 .login-portal_img {
   margin: auto 5em;
-  text-align: center;
 }
 
 .login-img {
@@ -215,7 +262,6 @@ footer a {
 
 .slogan-copy {
   font-family: "Open Sans Semibold Italic";
-  font-size: 1.25em;
 }
 
 /*Login page*/
@@ -223,9 +269,6 @@ footer a {
 .login,
 .contact_page,
 .create_account-page {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   max-width: 1072px;
   margin: 0px auto;
 }
@@ -249,7 +292,6 @@ footer a {
 }
 
 .form_input_type {
-  align-items: center;
   gap: 5px;
 }
 
@@ -265,20 +307,16 @@ footer a {
 
 .about-content {
   font-size: 1.1em;
-  flex-direction: column;
   text-align: left;
   margin: -19px 100px auto;
-}
-
-.about-title {
-  font-size: 2em;
-  text-align: center;
 }
 
 /*Contact page*/
 
 .contact_title,
-.create_title {
+.create_title,
+.page-title,
+.genre-title {
   font-size: 3em;
 }
 
@@ -298,7 +336,6 @@ footer a {
 }
 
 .header-navigation {
-  font-size: 2em;
   align-items: flex-end;
   justify-content: end;
 }
@@ -347,8 +384,6 @@ footer a {
 }
 
 .vertical-nav nav {
-  font-size: 2em;
-  flex-direction: column;
   text-align: left;
 }
 
@@ -370,7 +405,6 @@ ul li {
 
 .movie-item {
   width: calc(33.3333% - 10px);
-  text-align: center;
   box-sizing: border-box;
   flex-grow: 1;
   padding: 30px;
@@ -378,13 +412,10 @@ ul li {
 
 .page-title,
 .genre-title {
-  width: calc(100%);
   margin: 25px auto 0px 41px;
-  font-size: 3em;
 }
 
 .genre-title {
-  font-size: 2em;
   margin-bottom: -25px;
 }
 
@@ -430,7 +461,6 @@ ul li {
   width: 59%;
   box-shadow: 0 3px 6px black;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .profile-movies {
@@ -458,15 +488,10 @@ ul li {
 }
 
 .upload {
-  width: calc(100%);
   margin-bottom: 19px;
 }
 
 /*Movie-Product*/
-
-.producer-info {
-  align-items: center;
-}
 
 .movie-product {
   display: grid;
@@ -475,10 +500,6 @@ ul li {
 
 .movie-cover {
   grid-area: movie-cover;
-}
-
-.movie-image {
-  width: 100%;
 }
 
 .movie-product-title {
@@ -491,10 +512,6 @@ ul li {
 
 .pay-per-view_container {
   align-self: center;
-}
-
-.price {
-  font-size: 2em;
 }
 
 .container-producer-image {
@@ -526,10 +543,10 @@ ul li {
 .purchase-successful {
   position: absolute;
   background-color: rgba(19, 83, 117, 43%);
-  top: 68px;
-  left: 272px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 474px;
-  text-align: center;
   border-radius: 52px;
   padding: 20px;
 }
@@ -540,15 +557,38 @@ ul li {
   text-decoration: underline;
 }
 
-/*Screen resize*/
+/*Screen resize----------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 990px) {
   .about-content,
   .movie-product {
     display: flex;
   }
 
-  .centered-logo {
+  .about-content,
+  .movie-product {
+    flex-direction: column;
+  }
+
+  .centered-logo,
+  .content,
+  .profile-info {
     justify-content: center;
+  }
+
+  .contact_title,
+  .create_title,
+  .slogan_title,
+  .hamburger-icon,
+  .genre-title,
+  .movie-product-title {
+    font-size: 2em;
+  }
+
+  .page-title,
+  .genre-title,
+  .profile-info,
+  .movie-product {
+    text-align: center;
   }
 
   .anchor-logo {
@@ -557,7 +597,6 @@ ul li {
 
   .content {
     flex-wrap: wrap;
-    justify-content: center;
     margin: auto 30px;
   }
 
@@ -567,7 +606,6 @@ ul li {
   }
 
   .slogan_title {
-    font-size: 2em;
     margin: 30px auto auto;
   }
 
@@ -609,16 +647,8 @@ ul li {
 
   .about-content {
     font-size: 0.91em;
-    flex-direction: column;
     text-align: left;
     margin: -32px 58px auto;
-  }
-
-  /*Contact page*/
-
-  .contact_title,
-  .create_title {
-    font-size: 2em;
   }
 
   /*Create Account page*/
@@ -655,7 +685,6 @@ ul li {
     margin-left: 0;
     position: fixed;
     transform: rotate(90deg);
-    font-size: 2em;
     top: 350px;
     z-index: 2;
   }
@@ -694,16 +723,10 @@ ul li {
   .page-title,
   .genre-title {
     margin: 32px auto 0px;
-    text-align: center;
   }
 
   .page-title {
     font-size: 3em;
-  }
-
-  .genre-title,
-  .movie-product-title {
-    font-size: 2em;
   }
 
   .movie-title,
@@ -723,9 +746,7 @@ ul li {
 
   .profile-info {
     flex-wrap: wrap;
-    justify-content: center;
     margin: 63px 27px auto;
-    text-align: center;
   }
 
   .profile-picture-normal {
@@ -750,11 +771,6 @@ ul li {
   }
 
   /*Movie-product Page*/
-
-  .movie-product {
-    flex-direction: column;
-    text-align: center;
-  }
 
   .movie-cover {
     align-self: center;
