@@ -25,6 +25,7 @@
 /*
 "Open Sans Bold" - Main font
 "Open Sans Semibold Italic" - Secondary font
+""Open Sans Light Italic"" - Tertiary Font
 */
 
 /*Global styles*/
@@ -107,6 +108,16 @@ footer,
 .most-watched,
 .purchase-successful {
   text-align: center;
+}
+
+.movie-section, 
+.most-watched {
+  flex-wrap: wrap;
+}
+
+.movies, 
+.movie-product {
+  display: grid;
 }
 
 body {
@@ -361,7 +372,6 @@ footer a {
 }
 
 .movies {
-  display: grid;
   grid-template-areas: "vertical-nav movies movies movies movies";
 }
 
@@ -398,7 +408,6 @@ ul li {
 
 .movie-section {
   grid-area: movies;
-  flex-wrap: wrap;
   margin: auto auto auto 291px;
 }
 
@@ -459,7 +468,6 @@ ul li {
   margin: auto;
   width: 59%;
   box-shadow: 0 3px 6px black;
-  flex-wrap: wrap;
 }
 
 .profile-movies {
@@ -493,7 +501,6 @@ ul li {
 /*Movie-Product*/
 
 .movie-product {
-  display: grid;
   grid-template-areas: "movie-cover movie-info";
 }
 
@@ -505,6 +512,7 @@ ul li {
   font-size: 2.5em;
   margin: auto;
 }
+
 .movie-info {
   grid-area: movie-info;
 }
