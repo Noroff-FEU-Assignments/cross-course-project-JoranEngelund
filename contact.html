@@ -1,67 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
-        <link rel="preload" href="fonts/OpenSans-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin>
-        <meta charset="UTF-8" />
-        <meta name="description" content="The contact page where you can submit your inqueries to the staff" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/40442c7b29.js" crossorigin="anonymous"></script>
-        <link href="css/styles.css" rel="stylesheet">
-        <title>Square Eyes | Contact</title>
-    </head>
-    <body>
-          <header class="centered-logo">
-            <a href="/index.html" class="anchor-logo"><img class="logo" src="/images/logo-no-copy.png" alt="logo of square eyes" /></a>
-          </header>
-          <main>
-            <section class="back">
-                <div>
-                    <a href="/index.html" class="back_btn"><i class="fas fa-arrow-left"></i></a>
-                </div>
-            </section>
-            <section class="contact_page">
-                <h1 class="contact_title">
-                    Contact Us
-                </h1>
-                <form method="POST" action="#" class="form_input">
-                    <div class="form_input_type">
-                        <label for="fullname"><i class="fas fa-user"></i></label>
-                        <input type="text" name="fullname" id="fullname" placeholder="Full name *" class="form_input_field" required>
-                    </div>
-                    <div class="form_input_type">
-                        <label for="email"><i class="fas fa-envelope"></i></label>
-                        <input type="email" name="email" id="email" placeholder="Email@address.com *" class="form_input_field" required>
-                    </div>
-                    <div class="form_input_type">
-                        <label for="tel"><i class="fas fa-phone-alt"></i></label>
-                        <input type="tel" name="tel" id="tel" placeholder="Phone-number" class="form_input_field">
-                    </div>
-                    <div>
-                        <div class="form_input_type">
-                            <label for="message"><i class="fas fa-comment-alt"></i></label>
-                            <textarea name="message" id="message" rows="4" placeholder="Write your concern *" class="form_input_field" required></textarea>
-                        </div>
-                        <div>
-                            <select name="user-type" id="user-type" class="form_input_field" required>
-                                <option value="">Choose one</option>
-                                <option value="Creator" class="form_input_field">Creator</option>
-                                <option value="Watcher" class="form_input_field">Watcher</option>
-                            </select>
-                        </div>
-                        <div class="contact-btn">
-                            <button type="submit" class="cta cta-login-medium">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </section>
-          </main>
-          <footer>
-            <a href="#" aria-label="Link to our Facebook page"><i aria-hidden="true" class="fab fa-facebook-square" title="Link to our Facebook"></i></a>
-            <a href="#" aria-label="Link to our Twitter page"><i aria-hidden="true" class="fab fa-twitter-square" title="Link to our Twitter page"></i></a> 
-            <a href="#" aria-label="Link to our Instagram page"><i aria-hidden="true" class="fab fa-instagram" title="Link to our Instragram page"></i></a> 
-            <a href="/about.html" title="Link to our About page on this website">ABOUT</a> 
-            <a href="/contact.html" title="Link to our Contact page on this website">CONTACT</a>
-          </footer>
-    </body>
+  <head>
+    <link
+      rel="preload"
+      href="/fonts/OpenSans-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-SemiBoldItalic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The contact page where you can submit your inqueries to the staff"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/40442c7b29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Square Eyes | Contact</title>
+    <!-- Hotjar Tracking Code for https://eyessquare.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2966986, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header class="centered-logo">
+      <a href="/index.html" class="anchor-logo"
+        ><img
+          class="logo"
+          src="/images/logo-no-copy.png"
+          alt="logo of square eyes"
+      /></a>
+    </header>
+    <main>
+      <section class="back">
+        <div>
+          <a href="/index.html" class="back_btn"
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+        </div>
+      </section>
+      <section class="contact_page">
+        <h1 class="contact_title">Contact Us</h1>
+        <form method="POST" action="#" class="form_input">
+          <div class="form_input_type">
+            <label for="fullname"><i class="fas fa-user"></i></label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Full name *"
+              class="form_input_field"
+              required
+            />
+          </div>
+          <div class="form_input_type">
+            <label for="email"><i class="fas fa-envelope"></i></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email@address.com *"
+              class="form_input_field"
+              required
+            />
+          </div>
+          <div class="form_input_type">
+            <label for="tel"><i class="fas fa-phone-alt"></i></label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Phone-number"
+              class="form_input_field"
+            />
+          </div>
+          <div>
+            <div class="form_input_type">
+              <label for="message"><i class="fas fa-comment-alt"></i></label>
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="Write your concern *"
+                class="form_input_field"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <select
+                name="user-type"
+                id="user-type"
+                class="form_input_field"
+                required
+              >
+                <option value="">Choose one</option>
+                <option value="Creator" class="form_input_field">
+                  Creator
+                </option>
+                <option value="Watcher" class="form_input_field">
+                  Watcher
+                </option>
+              </select>
+            </div>
+            <div class="contact-btn">
+              <button type="submit" class="cta cta-login-medium">Send</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="#" aria-label="Link to our Facebook page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-facebook-square"
+          title="Link to our Facebook"
+        ></i
+      ></a>
+      <a href="#" aria-label="Link to our Twitter page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-twitter-square"
+          title="Link to our Twitter page"
+        ></i
+      ></a>
+      <a href="#" aria-label="Link to our Instagram page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-instagram"
+          title="Link to our Instragram page"
+        ></i
+      ></a>
+      <a href="/about.html" title="Link to our About page on this website"
+        >ABOUT</a
+      >
+      <a href="/contact.html" title="Link to our Contact page on this website"
+        >CONTACT</a
+      >
+    </footer>
+  </body>
 </html>

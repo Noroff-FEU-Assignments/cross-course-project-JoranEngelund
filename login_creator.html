@@ -1,58 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
-        <link rel="preload" href="fonts/OpenSans-SemiBoldItalic.ttf" as="font" type="font/ttf" crossorigin>
-        <meta charset="UTF-8" />
-        <meta name="description" content="The login page for the content-creators, for the Square Eyes streaming site" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/40442c7b29.js" crossorigin="anonymous"></script>
-        <link href="css/styles.css" rel="stylesheet">
-        <title>Square Eyes | Login</title>
-    </head>
-    <body>
-          <header class="centered-logo">
-            <a href="/index.html" class="anchor-logo"><img class="logo" src="/images/logo-no-copy.png" alt="logo of square eyes" /></a>
-          </header>
-          <main>
-            <section class="back">
-                <div>
-                    <a href="/index.html" class="back_btn"><i class="fas fa-arrow-left"></i></a>
-                </div>
-            </section>
-            <section class="login">
-                <div class="login_img">
-                    <img src="/images/creator_login.png" alt="image illustrating a movie camera in a cinema" class="login__img">
-                </div>
-                <div>
-                    <h1 class="login-title">Creator</h1>
-                </div>
-                <div>
-                    <form method="get" action="./profile_creator.html" class="form_input">
-                        <div class="form_input_type">
-                            <label for="email" class="form-label"><i class="fas fa-envelope"></i></label>
-                            <input type="email" name="email"  id="email" placeholder="Email@address.com" class="form_input_field" required>
-                        </div>
-                        <div class="form_input_type">
-                            <label for="password" class="form-label"><i class="fas fa-lock"></i></label>
-                            <input type="password" name="password" id="password" placeholder="Password" class="form_input_field" required>
-                        </div>
-                        <div class="login-btn">
-                            <button type="submit" class="cta cta-login-medium"><i class="fas fa-sign-in-alt"></i> Login</button>
-                        </div>
-                        <div class="login-btn">
-                            <a href="/signup_creator.html" class="cta cta-login-small"><i class="fas fa-sign-in-alt"></i> Sign Up</a>
-                        </div>
-                    </form>
-                </div>
-            </section>
-          </main>
-          <footer>
-            <a href="#" aria-label="Link to our Facebook page"><i aria-hidden="true" class="fab fa-facebook-square" title="Link to our Facebook"></i></a>
-            <a href="#" aria-label="Link to our Twitter page"><i aria-hidden="true" class="fab fa-twitter-square" title="Link to our Twitter page"></i></a> 
-            <a href="#" aria-label="Link to our Instagram page"><i aria-hidden="true" class="fab fa-instagram" title="Link to our Instragram page"></i></a> 
-            <a href="/about.html" title="Link to our About page on this website">ABOUT</a> 
-            <a href="/contact.html" title="Link to our Contact page on this website">CONTACT</a>
-          </footer>
-    </body>
+  <head>
+    <link
+      rel="preload"
+      href="/fonts/OpenSans-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-SemiBoldItalic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The login page for the content-creators, for the Square Eyes streaming site"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/40442c7b29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Square Eyes | Login</title>
+    <!-- Hotjar Tracking Code for https://eyessquare.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2966986, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header class="centered-logo">
+      <a href="/index.html" class="anchor-logo"
+        ><img
+          class="logo"
+          src="/images/logo-no-copy.png"
+          alt="logo of square eyes"
+      /></a>
+    </header>
+    <main>
+      <section class="back">
+        <div>
+          <a href="/index.html" class="back_btn"
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+        </div>
+      </section>
+      <section class="login">
+        <div class="login_img">
+          <img
+            src="/images/creator_login.png"
+            alt="image illustrating a movie camera in a cinema"
+            class="login__img"
+          />
+        </div>
+        <div>
+          <h1 class="login-title">Creator</h1>
+        </div>
+        <div>
+          <form method="get" action="./profile_creator.html" class="form_input">
+            <div class="form_input_type">
+              <label for="email" class="form-label"
+                ><i class="fas fa-envelope"></i
+              ></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email@address.com"
+                class="form_input_field"
+                required
+              />
+            </div>
+            <div class="form_input_type">
+              <label for="password" class="form-label"
+                ><i class="fas fa-lock"></i
+              ></label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="form_input_field"
+                required
+              />
+            </div>
+            <div class="login-btn">
+              <button type="submit" class="cta cta-login-medium">
+                <i class="fas fa-sign-in-alt"></i> Login
+              </button>
+            </div>
+            <div class="login-btn">
+              <a href="/signup_creator.html" class="cta cta-login-small"
+                ><i class="fas fa-sign-in-alt"></i> Sign Up</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#" aria-label="Link to our Facebook page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-facebook-square"
+          title="Link to our Facebook"
+        ></i
+      ></a>
+      <a href="#" aria-label="Link to our Twitter page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-twitter-square"
+          title="Link to our Twitter page"
+        ></i
+      ></a>
+      <a href="#" aria-label="Link to our Instagram page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-instagram"
+          title="Link to our Instragram page"
+        ></i
+      ></a>
+      <a href="/about.html" title="Link to our About page on this website"
+        >ABOUT</a
+      >
+      <a href="/contact.html" title="Link to our Contact page on this website"
+        >CONTACT</a
+      >
+    </footer>
+  </body>
 </html>
