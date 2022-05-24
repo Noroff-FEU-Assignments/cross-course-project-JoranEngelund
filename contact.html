@@ -63,7 +63,7 @@
       </section>
       <section class="contact_page">
         <h1 class="contact_title">Contact Us</h1>
-        <form method="POST" action="#" class="form_input">
+        <form method="POST" action="#" class="form_input contactForm">
           <div class="form_input_type">
             <label for="fullname"><i class="fas fa-user"></i></label>
             <input
@@ -75,6 +75,7 @@
               required
             />
           </div>
+          <div class="nameError">Full name needs at least 1 character</div>
           <div class="form_input_type">
             <label for="email"><i class="fas fa-envelope"></i></label>
             <input
@@ -86,6 +87,7 @@
               required
             />
           </div>
+          <div class="emailError">Email needs to contain @ and .</div>
           <div class="form_input_type">
             <label for="tel"><i class="fas fa-phone-alt"></i></label>
             <input
@@ -95,6 +97,9 @@
               placeholder="Phone-number"
               class="form_input_field"
             />
+          </div>
+          <div class="telError">
+            Phone number needs to contain at least 8 digits
           </div>
           <div>
             <div class="form_input_type">
@@ -107,6 +112,9 @@
                 class="form_input_field"
                 required
               ></textarea>
+            </div>
+            <div class="messageError">
+              Message needs to be at least 10 characters long
             </div>
             <div>
               <select
@@ -160,5 +168,6 @@
         >CONTACT</a
       >
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
