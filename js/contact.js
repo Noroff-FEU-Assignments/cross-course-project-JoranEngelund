@@ -8,37 +8,48 @@ const nameError = document.querySelector(".nameError");
 const emailError = document.querySelector(".emailError");
 const telError = document.querySelector(".telError");
 const messageError = document.querySelector(".messageError");
+const successMessage = document.querySelector(".successMessage");
 
-const checkLength = (value, length) => {
-  if (value.trim().length > length) {
+function checkLength(value, len) {
+  if (value.trim().length > len) {
     return true;
   } else {
     return false;
   }
-};
+}
 
-const formValidator = () => {
+let validForm = false;
+
+function formValidator() {
   if (checkLength(fullName.value, 0) === true) {
     nameError.style.display = "none";
+    validForm = true;
   } else {
     nameError.style.display = "block";
+    validForm = false;
   }
   if (checkLength(phone.value, 7) === true) {
     telError.style.display = "none";
+    validForm = true;
   } else {
     telError.style.display = "block";
+    validForm = false;
   }
   if (checkLength(message.value, 9) === true) {
     messageError.style.display = "none";
+    validForm = true;
   } else {
     messageError.style.display = "block";
+    validForm = false;
   }
   if (emailValidator(email.value) === true) {
     emailError.style.display = "none";
+    validForm = true;
   } else {
     emailError.style.display = "block";
+    validForm = false;
   }
-};
+}
 
 const emailValidator = (email) => {
   const regEx = /\S+@\S+\.\S+/;
@@ -52,7 +63,13 @@ message.addEventListener("keyup", formValidator);
 email.addEventListener("keyup", formValidator);
 
 const formSubmit = (event) => {
-  event.preventDefauly();
+  event.preventDefault();
+  if (validForm === true) {
+    successMessage.innerHTML =
+      "Your message has been successfully sent to us! We'll respond to you as fast as possible";
+  } else {
+    successMessage.innerHTML = "";
+  }
   form.reset();
 };
 

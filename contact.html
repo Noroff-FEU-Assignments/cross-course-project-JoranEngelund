@@ -63,7 +63,8 @@
       </section>
       <section class="contact_page">
         <h1 class="contact_title">Contact Us</h1>
-        <form method="POST" action="#" class="form_input contactForm">
+        <div class="successMessage"></div>
+        <form method="GET" action="" class="form_input contactForm">
           <div class="form_input_type">
             <label for="fullname"><i class="fas fa-user"></i></label>
             <input
@@ -75,7 +76,9 @@
               required
             />
           </div>
-          <div class="nameError">Full name needs at least 1 character</div>
+          <div class="contactFormError nameError">
+            Full name needs at least 1 character
+          </div>
           <div class="form_input_type">
             <label for="email"><i class="fas fa-envelope"></i></label>
             <input
@@ -87,7 +90,9 @@
               required
             />
           </div>
-          <div class="emailError">Email needs to contain @ and .</div>
+          <div class="contactFormError emailError">
+            Email needs to contain @ and .
+          </div>
           <div class="form_input_type">
             <label for="tel"><i class="fas fa-phone-alt"></i></label>
             <input
@@ -98,7 +103,7 @@
               class="form_input_field"
             />
           </div>
-          <div class="telError">
+          <div class="contactFormError telError">
             Phone number needs to contain at least 8 digits
           </div>
           <div>
@@ -113,7 +118,7 @@
                 required
               ></textarea>
             </div>
-            <div class="messageError">
+            <div class="contactFormError messageError">
               Message needs to be at least 10 characters long
             </div>
             <div>

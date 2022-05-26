@@ -330,6 +330,10 @@ footer a {
   font-size: 3em;
 }
 
+.contactFormError {
+  display: none;
+}
+
 /*Movie page*/
 
 .anchor-size {
