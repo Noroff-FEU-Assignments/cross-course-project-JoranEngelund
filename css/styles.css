@@ -367,6 +367,14 @@ footer a {
   width: 9%;
 }
 
+.userIcon {
+  margin-bottom: 2px;
+}
+
+.loginIcon {
+  font-size: 1.3em;
+}
+
 .profile-picture-watcher-small {
   width: 90%;
 }

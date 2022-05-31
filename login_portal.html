@@ -15,10 +15,17 @@
       type="font/ttf"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="/fonts/OpenSans-LightItalic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="The login page for the content-creators, for the Square Eyes streaming site"
+      content="Square Eyes is a streaming website made for connecting film-lovers, for people who are passionate about watching high quality films, crafted by people who are passionate about making film"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
@@ -26,7 +33,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="css/styles.css" rel="stylesheet" />
-    <title>Square Eyes | Login</title>
+    <title>Square Eyes | Login Portal</title>
     <!-- Hotjar Tracking Code for https://eyessquare.netlify.app/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -49,68 +56,40 @@
       <a href="/index.html" class="anchor-logo"
         ><img
           class="logo"
-          src="/images/logo-no-copy.png"
+          src="images/logo-no-copy.png"
           alt="logo of square eyes"
       /></a>
     </header>
     <main>
-      <section class="back">
-        <div>
-          <a href="/login_portal.html" class="back_btn"
-            ><i class="fas fa-arrow-left"></i
-          ></a>
-        </div>
+      <section class="slogan">
+        <h1 class="slogan_title">Connecting Film-Lovers</h1>
       </section>
-      <section class="login">
-        <div class="login_img">
-          <img
-            src="/images/creator_login.png"
-            alt="image illustrating a movie camera in a cinema"
-            class="login__img"
-          />
+      <section class="content">
+        <div class="slogan-copy copy-1">
+          <p>
+            "For people who are passionate about watching high quality films"
+          </p>
         </div>
-        <div>
-          <h1 class="login-title">Creator</h1>
+        <div class="login-portal_img">
+          <a href="/login_watcher.html" class="login_anchor-image"
+            ><img
+              class="login-img"
+              src="./images/watcher.png"
+              alt="an image for watchers illustrating popcorn in a cinema"
+          /></a>
+          <a href="/login_watcher.html" class="cta">WATCHER</a>
         </div>
-        <div>
-          <form method="get" action="./profile_creator.html" class="form_input">
-            <div class="form_input_type">
-              <label for="email" class="form-label"
-                ><i class="fas fa-envelope"></i
-              ></label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email@address.com"
-                class="form_input_field"
-                required
-              />
-            </div>
-            <div class="form_input_type">
-              <label for="password" class="form-label"
-                ><i class="fas fa-lock"></i
-              ></label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-                class="form_input_field"
-                required
-              />
-            </div>
-            <div class="login-btn">
-              <button type="submit" class="cta cta-login-medium">
-                <i class="fas fa-sign-in-alt"></i> Login
-              </button>
-            </div>
-            <div class="login-btn">
-              <a href="/signup_creator.html" class="cta cta-login-small"
-                ><i class="fas fa-sign-in-alt"></i> Sign Up</a
-              >
-            </div>
-          </form>
+        <div class="login-portal_img">
+          <a href="/login_creator.html" class="login_anchor-image"
+            ><img
+              class="login-img"
+              src="./images/creator.png"
+              alt="an image for creators illustrating a cinema camera"
+          /></a>
+          <a href="/login_creator.html" class="cta">CREATOR</a>
+        </div>
+        <div class="slogan-copy copy-2">
+          <p>"Crafted by people who are passionate about making films"</p>
         </div>
       </section>
     </main>
