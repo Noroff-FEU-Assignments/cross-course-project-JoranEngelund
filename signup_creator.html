@@ -63,7 +63,17 @@
       </section>
       <section class="create_account-page">
         <h1 class="create_title">Create Account</h1>
-        <form method="get" action="./profile_creator.html" class="form_input">
+        <div class="successMessage"></div>
+        <a
+          href="/movies_creator.html"
+          class="cta cta-create_account-medium afterRegisterCta"
+          ><i class="fas fa-sign-in-alt"></i> Enter</a
+        >
+        <form
+          method="get"
+          action="./profile_creator.html"
+          class="form_input registerForm"
+        >
           <div class="form_input_type">
             <label for="firstname"><i class="fas fa-user"></i></label>
             <input
@@ -74,6 +84,9 @@
               class="form_input_field"
               required
             />
+          </div>
+          <div class="contactFormError nameError">
+            Full name needs at least 1 character
           </div>
           <div class="form_input_type">
             <label for="surname"><i class="fas fa-user"></i></label>
@@ -86,6 +99,9 @@
               required
             />
           </div>
+          <div class="contactFormError surnameError">
+            Surnname needs at least 1 character
+          </div>
           <div class="form_input_type">
             <label for="email"><i class="fas fa-envelope"></i></label>
             <input
@@ -96,6 +112,9 @@
               class="form_input_field"
               required
             />
+          </div>
+          <div class="contactFormError emailError">
+            Email needs to contain @ and .
           </div>
           <div class="form_input_type">
             <label for="password"><i class="fas fa-lock"></i></label>
@@ -109,6 +128,9 @@
               minlength="8"
             />
           </div>
+          <div class="contactFormError passwordError">
+            Password needs at least 8 characters
+          </div>
           <div class="form_input_type">
             <label for="password2"><i class="fas fa-lock"></i></label>
             <input
@@ -120,6 +142,9 @@
               required
               minlength="8"
             />
+          </div>
+          <div class="contactFormError repeatPasswordError">
+            Password needs at least 8 characters
           </div>
           <div>
             <div class="login-btn">
@@ -165,5 +190,6 @@
         >CONTACT</a
       >
     </footer>
+    <script src="js/register.js"></script>
   </body>
 </html>

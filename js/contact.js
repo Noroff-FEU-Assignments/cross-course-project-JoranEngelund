@@ -68,7 +68,6 @@ const formSubmit = (event) => {
   if (validForm === true) {
     successMessage.style.display = "block";
     browseMoreCTA.style.display = "block";
-
     successMessage.innerHTML =
       "Your message has been successfully sent to us! We'll respond to you as fast as possible";
   } else {
