@@ -344,13 +344,16 @@ footer a {
     border-radius: 10px;
     background: green;
     font-size: 0.9rem;
-    margin: 12px auto;
     padding: 10px 10px;
+}
+
+.contact_title, .successMessage {
+  margin: 12px 10px;
 }
 
 .browseMore {
   display: none;
-  margin: 10px auto;
+  margin: 6px auto 18px auto;
 }
 /*Movie page*/
 
