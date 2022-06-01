@@ -9,6 +9,7 @@ const emailError = document.querySelector(".emailError");
 const telError = document.querySelector(".telError");
 const messageError = document.querySelector(".messageError");
 const successMessage = document.querySelector(".successMessage");
+const browseMoreCTA = document.querySelector(".browseMore");
 
 function checkLength(value, len) {
   if (value.trim().length > len) {
@@ -65,6 +66,9 @@ email.addEventListener("keyup", formValidator);
 const formSubmit = (event) => {
   event.preventDefault();
   if (validForm === true) {
+    successMessage.style.display = "block";
+    browseMoreCTA.style.display = "block";
+
     successMessage.innerHTML =
       "Your message has been successfully sent to us! We'll respond to you as fast as possible";
   } else {
