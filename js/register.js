@@ -13,7 +13,6 @@ const repeatPasswordError = document.querySelector(".repeatPasswordError");
 const repeatError = document.querySelector(".repeatError");
 const submit = document.querySelector("button");
 const logInButton = document.querySelector(".afterRegisterCta");
-const successMessage = document.querySelector(".successMessage");
 
 let validForm = false;
 const checkLength = (value, len) => {
@@ -95,14 +94,10 @@ repeatPassword.addEventListener("keyup", checkPassword);
 const formSubmit = (event) => {
   event.preventDefault();
   if (validForm === true) {
-    successMessage.style.display = "block";
-    successMessage.innerHTML =
-      "Your account has been successfully created! Enter the site to watch movies";
     logInButton.style.display = "block";
     form.style.display = "none";
     title.innerHTML = "Account Created!";
   } else {
-    sucessMessage.innerHTML = "";
     logInButton.style.display = "none";
   }
   form.reset();
