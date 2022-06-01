@@ -10,8 +10,15 @@ function renderTeams() {
   moviesToRender.forEach(function (movie) {
     movieSection.innerHTML += `<div class="movie-item">
                                     <img class="movie-cover" src="${movie.imgsrc}" alt=""/>
+                                    <div class="movie-rating">
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        </div>
                                     <h3 class="movie-title">${movie.name}</h3>
                                     <h4 class="movie-title">$${movie.price}</h4>
+                                    <a href="${movie.location}" class="cta cta_play-now"
+                                    ><i class="fas fa-play"></i> Play Now</a>
                                 </div>`;
   });
 }
