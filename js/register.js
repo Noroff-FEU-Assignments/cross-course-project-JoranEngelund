@@ -10,10 +10,12 @@ const surnameError = document.querySelector(".surnameError");
 const emailError = document.querySelector(".emailError");
 const passwordError = document.querySelector(".passwordError");
 const repeatPasswordError = document.querySelector(".repeatPasswordError");
+const repeatError = document.querySelector(".repeatError");
 const submit = document.querySelector("button");
 const logInButton = document.querySelector(".afterRegisterCta");
 const successMessage = document.querySelector(".successMessage");
 
+let validForm = false;
 const checkLength = (value, len) => {
   if (value.trim().length > len) {
     return true;
@@ -22,13 +24,21 @@ const checkLength = (value, len) => {
   }
 };
 
+const checkPassword = (value) => {
+  if (password.value === repeatPassword.value) {
+    repeatError.style.display = "none";
+    validForm = true;
+  } else {
+    repeatError.style.display = "block";
+    validForm = false;
+  }
+};
+
 const emailValidator = (email) => {
   const regEx = /\S+@\S+\.\S+/;
   const pattern = regEx.test(email);
   return pattern;
 };
-
-let validForm = false;
 
 function formValidator() {
   if (checkLength(firstName.value, 0) === true) {
@@ -66,6 +76,13 @@ function formValidator() {
     repeatPasswordError.style.display = "block";
     validForm = false;
   }
+  if (checkPassword(password.value, 7) === true) {
+    repeatError.style.display = "none";
+    validForm = true;
+  } else {
+    repeatError.style.display = "block";
+    validForm = false;
+  }
 }
 
 firstName.addEventListener("keyup", formValidator);
@@ -73,6 +90,7 @@ surname.addEventListener("keyup", formValidator);
 email.addEventListener("keyup", formValidator);
 password.addEventListener("keyup", formValidator);
 repeatPassword.addEventListener("keyup", formValidator);
+repeatPassword.addEventListener("keyup", checkPassword);
 
 const formSubmit = (event) => {
   event.preventDefault();
