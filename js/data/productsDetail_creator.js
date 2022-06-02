@@ -10,7 +10,7 @@ export const movies = [
     rating: `<i class="fas fa-star"></i> <i class="fas fa-star"></i>
             <i class="fas fa-star"></i> <i class="far fa-star"></i>
             <i class="far fa-star"></i>`,
-    location: "../../purchase-page_movie1.html",
+    location: "../../purchase-page_movie1_creator.html",
   },
   {
     name: "Was it even close?",
@@ -23,7 +23,7 @@ export const movies = [
     rating: `<i class="fas fa-star"></i> <i class="fas fa-star"></i>
             <i class="far fa-star"></i> <i class="far fa-star"></i>
             <i class="far fa-star"></i>`,
-    location: "../../purchase-page_movie2.html",
+    location: "../../purchase-page_movie2_creator.html",
   },
   {
     name: "The Last Chance",
@@ -36,6 +36,6 @@ export const movies = [
     rating: `<i class="fas fa-star"></i> <i class="fas fa-star"></i>
            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>`,
-    location: "../../purchase-page_movie3.html",
+    location: "../../purchase-page_movie3_creator.html",
   },
 ];

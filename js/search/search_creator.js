@@ -1,4 +1,4 @@
-import { movies } from "./data/products.js";
+import { movies } from "../data/products_creator.js";
 
 const search = document.querySelector("#search");
 const movieSection = document.querySelector(".movie-section");

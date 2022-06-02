@@ -1,4 +1,4 @@
-import { movies } from "./data/productsDetail.js";
+import { movies } from "../data/productsDetail_watcher.js";
 
 const search = document.querySelector("#search");
 const movieProduct = document.querySelector(".movie-product");
@@ -15,11 +15,7 @@ function renderMovies(moviesToRender) {
                                     <div>
                                         <h1 class="movie-product-title">${movie.name}</h1>
                                     </div>
-                                    <div class="movie-rating">
-                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
+                                    <div class="movie-rating"> ${movie.rating}</div>
                                     <div>
                                         <p class="movie-description">${movie.description}</p>
                                     </div>
