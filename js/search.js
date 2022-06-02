@@ -3,9 +3,7 @@ import { movies } from "./data/products.js";
 const search = document.querySelector("#search");
 const movieSection = document.querySelector(".movie-section");
 
-let moviesToRender = movies;
-
-function renderMovies() {
+function renderTeams(moviesToRender) {
   movieSection.innerHTML = "";
   moviesToRender.forEach(function (movie) {
     movieSection.innerHTML += `<div class="movie-item">
@@ -25,9 +23,7 @@ function renderMovies() {
 search.onkeyup = function (event) {
   const searchValue = event.target.value.trim().toLowerCase();
   if (searchValue === "") {
-    moviesToRender = movies;
-    renderMovies();
-    return;
+    return renderTeams(movies);
   }
   const filteredMovies = movies.filter(function (movie) {
     if (movie.name.toLowerCase().startsWith(searchValue)) {
@@ -36,6 +32,6 @@ search.onkeyup = function (event) {
       return false;
     }
   });
-  moviesToRender = filteredMovies;
-  renderMovies();
+
+  renderTeams(filteredMovies);
 };
