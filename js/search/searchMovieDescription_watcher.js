@@ -8,7 +8,7 @@ function renderMovies(moviesToRender) {
   moviesToRender.forEach(function (movie) {
     movieProduct.innerHTML += `<section class="movie-cover">
                                     <div>
-                                        <img class="movie-image" src="${movie.imgsrc}" alt=""/>
+                                        <img class="movie-image" src="${movie.imgsrc}" alt="${movie.alt}"/>
                                     </div>
                                 </section>
                                 <section class="movie-info">

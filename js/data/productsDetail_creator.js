@@ -7,6 +7,7 @@ export const movies = [
     id: 1,
     category: "Drama",
     imgsrc: "../../images/movie-title-1.png",
+    alt: "Cover of the movie A Good Game",
     rating: `<i class="fas fa-star"></i> <i class="fas fa-star"></i>
             <i class="fas fa-star"></i> <i class="far fa-star"></i>
             <i class="far fa-star"></i>`,
@@ -20,6 +21,7 @@ export const movies = [
     id: 2,
     category: "Comedy",
     imgsrc: "../../images/movie-title-2.png",
+    alt: "Cover of the movie Was it even close?",
     rating: `<i class="fas fa-star"></i> <i class="fas fa-star"></i>
             <i class="far fa-star"></i> <i class="far fa-star"></i>
             <i class="far fa-star"></i>`,
@@ -33,6 +35,7 @@ export const movies = [
     id: 3,
     category: "Action",
     imgsrc: "../../images/movie-title-3.png",
+    alt: "Cover of the movie The Last Chance",
     rating: `<i class="fas fa-star"></i> <i class="fas fa-star"></i>
            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>`,

@@ -7,7 +7,7 @@ function renderTeams(moviesToRender) {
   movieSection.innerHTML = "";
   moviesToRender.forEach(function (movie) {
     movieSection.innerHTML += `<div class="movie-item">
-                                    <a href="${movie.location}"><img class="movie-cover" src="${movie.imgsrc}" alt=""/></a>
+                                    <a href="${movie.location}"><img class="movie-cover" src="${movie.imgsrc}" alt="${movie.alt}"/></a>
                                     <div class="movie-rating">
                                         <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i> <i class="fas fa-star"></i>
