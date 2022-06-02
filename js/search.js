@@ -5,7 +5,7 @@ const movieSection = document.querySelector(".movie-section");
 
 let moviesToRender = movies;
 
-function renderTeams() {
+function renderMovies() {
   movieSection.innerHTML = "";
   moviesToRender.forEach(function (movie) {
     movieSection.innerHTML += `<div class="movie-item">
@@ -26,7 +26,7 @@ search.onkeyup = function (event) {
   const searchValue = event.target.value.trim().toLowerCase();
   if (searchValue === "") {
     moviesToRender = movies;
-    renderTeams();
+    renderMovies();
     return;
   }
   const filteredMovies = movies.filter(function (movie) {
@@ -37,5 +37,5 @@ search.onkeyup = function (event) {
     }
   });
   moviesToRender = filteredMovies;
-  renderTeams();
+  renderMovies();
 };
