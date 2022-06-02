@@ -73,7 +73,11 @@
           <h1 class="login-title">Watcher</h1>
         </div>
         <div>
-          <form method="get" action="./movies_watcher.html" class="form_input">
+          <form
+            method="get"
+            action="./movies_watcher.html"
+            class="form_input loginForm"
+          >
             <div class="form_input_type">
               <label for="email" class="form-label"
                 ><i class="fas fa-envelope"></i
@@ -87,6 +91,9 @@
                 required
               />
             </div>
+            <div class="contactFormError emailError">
+              Email needs to contain @ and .
+            </div>
             <div class="form_input_type">
               <label for="password" class="form-label"
                 ><i class="fas fa-lock"></i
@@ -99,6 +106,9 @@
                 class="form_input_field"
                 required
               />
+            </div>
+            <div class="contactFormError passwordError">
+              Password needs at least 8 characters
             </div>
             <div class="login-btn">
               <button type="submit" class="cta cta-login-medium">
@@ -143,5 +153,6 @@
         >CONTACT</a
       >
     </footer>
+    <script src="/js/form/login.js"></script>
   </body>
 </html>

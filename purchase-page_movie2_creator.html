@@ -72,7 +72,7 @@
         <form
           method="get"
           action="./purchase-successful-c-m2.html"
-          class="form_input"
+          class="form_input purchaseForm"
         >
           <div class="form_input_type">
             <label for="firstname"><i class="fas fa-user"></i></label>
@@ -85,6 +85,9 @@
               required
             />
           </div>
+          <div class="contactFormError nameError">
+            First name needs at least 1 character
+          </div>
           <div class="form_input_type">
             <label for="surname"><i class="fas fa-user"></i></label>
             <input
@@ -95,6 +98,9 @@
               class="form_input_field"
               required
             />
+          </div>
+          <div class="contactFormError surnameError">
+            Surname needs at least 1 character
           </div>
           <div class="form_input_type">
             <label for="cc"><i class="far fa-credit-card"></i></label>
@@ -111,6 +117,9 @@
               required
             />
           </div>
+          <div class="contactFormError ccError">
+            Credit Card needs at least 19 digits
+          </div>
           <div class="form_input_type">
             <label for="date"><i class="fas fa-calendar-day"></i></label>
             <input
@@ -125,6 +134,9 @@
               pattern="[0-9]+"
             />
           </div>
+          <div class="contactFormError dateError">
+            Expiry date needs 5 digits
+          </div>
           <div class="form_input_type">
             <label for="cvc"><i class="far fa-credit-card"></i></label>
             <input
@@ -133,11 +145,12 @@
               id="cvc"
               placeholder="CVC *"
               class="form_input_field"
+              pattern="[0-9]+"
               required
               maxlength="3"
-              pattern="[0-9]+"
             />
           </div>
+          <div class="contactFormError cvcError">CVC needs 3 digits</div>
           <div>
             <div class="login-btn">
               <button type="submit" class="cta cta-create_account-medium">
@@ -184,5 +197,6 @@
         >CONTACT</a
       >
     </footer>
+    <script src="/js/form/purchaseForm.js"></script>
   </body>
 </html>
