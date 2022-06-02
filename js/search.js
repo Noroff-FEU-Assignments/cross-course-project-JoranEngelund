@@ -16,7 +16,6 @@ function renderTeams() {
                                         <i class="far fa-star"></i>
                                         </div>
                                     <h3 class="movie-title">${movie.name}</h3>
-                                    <h4 class="movie-title">$${movie.price}</h4>
                                     <a href="${movie.location}" class="cta cta_play-now"
                                     ><i class="fas fa-play"></i> Play Now</a>
                                 </div>`;
@@ -25,6 +24,11 @@ function renderTeams() {
 
 search.onkeyup = function (event) {
   const searchValue = event.target.value.trim().toLowerCase();
+  if (searchValue === "") {
+    moviesToRender = movies;
+    renderTeams();
+    return;
+  }
   const filteredMovies = movies.filter(function (movie) {
     if (movie.name.toLowerCase().startsWith(searchValue)) {
       return true;
@@ -32,8 +36,6 @@ search.onkeyup = function (event) {
       return false;
     }
   });
-  console.log(filteredMovies);
-
   moviesToRender = filteredMovies;
   renderTeams();
 };
