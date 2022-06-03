@@ -711,6 +711,10 @@ ul li {
     padding: 6px 15px;
   }
 
+  .afterRegisterCta {
+    font-size: 1em;
+    padding: 10px 10px;
+  }
   /*Movie page*/
 
   
@@ -967,5 +971,6 @@ ul li {
   .purchase-successful h3 {
     font-size: 0.5em;
   }
+  
   
 }
