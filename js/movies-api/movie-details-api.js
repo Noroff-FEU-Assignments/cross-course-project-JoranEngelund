@@ -26,8 +26,8 @@ async function getMovieDetails(movieUrl) {
                                             <div class="movie-rating">
                                                 ${details.attributes[0].terms[0].name}
                                             </div>
-                                            <div class="movie-description">
-                                                <p>${details.description}</p>
+                                            <div>
+                                                <p class="movie-description">${details.description}</p>
                                             </div>
                                             <div class="pay-price">
                                                 <div class="pay-per-view-container">
