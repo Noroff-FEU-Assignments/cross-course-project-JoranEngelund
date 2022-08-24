@@ -18,7 +18,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="The Movie page where you can watch independently made movies"
+      content="The purchase page to buy independently made movies"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
@@ -26,7 +26,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="css/styles.css" rel="stylesheet" />
-    <title>Square Eyes | Movies</title>
+    <title>Square Eyes | Purchase Page</title>
     <!-- Hotjar Tracking Code for https://eyessquare.netlify.app/ -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -45,62 +45,17 @@
     </script>
   </head>
   <body>
-    <header class="movie-header">
-      <a href="./movies_watcher.html" class="anchor-size"
+    <header class="centered-logo">
+      <a href="./index.html" class="anchor-logo"
         ><img
-          class="logo-movies"
-          src="images/logo-no-copy.png"
+          class="logo"
+          src="/images/logo-no-copy.png"
           alt="logo of square eyes"
       /></a>
-      <nav class="header-navigation">
-        <div class="header-item">
-          <a href="/movies_watcher.html">movies</a>
-        </div>
-        <div class="header-item">
-          <input
-            type="search"
-            id="search"
-            name="search"
-            placeholder="Search movies"
-            class="form_input_field"
-          />
-        </div>
-        <div class="header-item profile-picture-small">
-          <a href="./profile_watcher.html"
-            ><img
-              class="profile-picture-watcher-small"
-              src="/images/profile-picture-watcher-small.png"
-              alt="profile picture of a user"
-          /></a>
-        </div>
-        <div class="header-item">
-          <a href="/login_watcher.html"
-            ><i class="signout-icon fas fa-sign-out-alt"></i
-          ></a>
-        </div>
-      </nav>
     </header>
-    <main class="movies">
-      <label class="hamburger-icon" for="hamburger-menu"
-        ><i class="fas fa-bars"></i
-      ></label>
-      <input type="checkbox" id="hamburger-menu" name="hamburger-menu" />
-      <section class="vertical-nav">
-        <nav>
-          <h2>GENRES</h2>
-          <ul>
-            <li><a href="./movies_watcher-action.html">Action</a></li>
-            <li><a href="./movies_watcher-adventure.html">Adventure</a></li>
-            <li><a href="./movies_watcher-biography.html">Biography</a></li>
-            <li><a href="./movies_watcher-comedy.html">Comedy</a></li>
-            <li><a href="./movies_watcher-family.html">Family</a></li>
-            <li><a href="./movies_watcher-romance.html">Romance</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section class="movie-section">
-        <h1 class="page-title">Movies</h1>
-      </section>
+    <main>
+      <section class="back"></section>
+      <section class="create_account-page"></section>
     </main>
     <footer>
       <a href="#" aria-label="Link to our Facebook page"
@@ -131,7 +86,7 @@
         >CONTACT</a
       >
     </footer>
-    <script src="/js/search/search_watcher.js" type="module"></script>
-    <script src="js/movies-api/watcher-movie-list-api.js"></script>
+    <script src="/js/form/purchaseForm.js"></script>
+    <script src="js/movies-api/purchase-movie-api.js"></script>
   </body>
 </html>

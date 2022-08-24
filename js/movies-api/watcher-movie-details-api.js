@@ -31,7 +31,7 @@ async function getMovieDetails(movieUrl) {
                                             </div>
                                             <div class="pay-price">
                                                 <div class="pay-per-view_container">
-                                                    <a href="/purchase-page_movie.html?id=${details.id}" class="cta pay-per-view"
+                                                    <a href="./purchase-page_movie_watcher.html?id=${details.id}" class="cta pay-per-view"
                                                     ><i class="far fa-credit-card"></i> Pay per view</a>
                                                 </div>
                                                 <h3 class="price">${details.prices.currency_prefix}${details.prices.currency_suffix}${details.prices.price}</h3>

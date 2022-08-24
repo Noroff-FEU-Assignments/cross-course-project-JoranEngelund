@@ -46,7 +46,7 @@
   </head>
   <body>
     <header class="movie-header">
-      <a href="./index.html" class="anchor-size"
+      <a href="./movies_creator.html" class="anchor-size"
         ><img
           class="logo-movies"
           src="images/logo-no-copy.png"
@@ -54,7 +54,7 @@
       /></a>
       <nav class="header-navigation">
         <div class="header-item">
-          <a href="index.html">movies</a>
+          <a href="/movies_creator.html">movies</a>
         </div>
         <div class="header-item">
           <input
@@ -65,15 +65,25 @@
             class="form_input_field"
           />
         </div>
-        <div class="header-item loginIcon">
-          <a href="login_portal.html"><i class="fas fa-sign-in-alt"></i></a>
+        <div class="header-item profile-picture-small">
+          <a href="./profile_creator.html"
+            ><img
+              class="profile-picture-watcher-small"
+              src="./images/profile-picture-small-creator.png"
+              alt="profile picture of a user"
+          /></a>
+        </div>
+        <div class="header-item">
+          <a href="/login_creator.html"
+            ><i class="signout-icon fas fa-sign-out-alt"></i
+          ></a>
         </div>
       </nav>
     </header>
     <main>
       <section class="back">
         <div>
-          <a href="./index.html" class="back_btn"
+          <a href="./movies_creator.html" class="back_btn"
             ><i class="fas fa-arrow-left"></i
           ></a>
         </div>
@@ -88,46 +98,7 @@
         </div>
         <h2 class="profile-name">Liam Ridley</h2>
       </section>
-      <section class="movie-product">
-        <section class="movie-cover">
-          <div>
-            <img
-              class="movie-image"
-              src="./images/movie-title-1.png"
-              alt="Cover of the movie, Was it even close?"
-            />
-          </div>
-        </section>
-        <section class="movie-info">
-          <div>
-            <h1 class="movie-product-title">A Good Game</h1>
-          </div>
-          <div class="movie-rating">
-            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div>
-            <p class="movie-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-          <div class="pay-price">
-            <div class="pay-per-view_container">
-              <a href="./purchase-page_movie1.html" class="cta pay-per-view"
-                ><i class="far fa-credit-card"></i> Pay per view</a
-              >
-            </div>
-            <h3 class="price">$ 25</h3>
-          </div>
-        </section>
-      </section>
+      <section class="movie-product"></section>
     </main>
     <footer>
       <a href="#" aria-label="Link to our Facebook page"
@@ -158,6 +129,10 @@
         >CONTACT</a
       >
     </footer>
-    <script src="/js/search/searchMovieDescription.js" type="module"></script>
+    <script
+      src="/js/search/searchMovieDescription_creator.js"
+      type="module"
+    ></script>
+    <script src="js/movies-api/creator-movie-details-api.js"></script>
   </body>
 </html>
