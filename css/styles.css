@@ -604,6 +604,41 @@ ul li {
   text-decoration: underline;
 }
 
+.card {
+  width: calc(46.33% - -10px);
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  border: 2px solid #F54500;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.error {
+  font-size: 1.5rem;
+  background-color: red;
+  padding: 1rem;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 16px solid #03173A;
+  border-top: 16px solid #F54500;
+  border-radius: 50%;
+  margin-left: 43%;
+  animation: 2s loader linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*Screen resize----------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 990px) {
 

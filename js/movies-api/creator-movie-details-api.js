@@ -6,12 +6,15 @@ const movieUrl =
   "https://movies-api-squareeyes.engelund.site/wp-json/wc/store/products/" + id;
 
 const movieProductContainer = document.querySelector(".movie-product");
+const loader = document.querySelector(".loader");
+
+const stopLoader = () => loader.classList.remove("loader");
 
 async function getMovieDetails(movieUrl) {
   try {
     const response = await fetch(movieUrl);
     const details = await response.json();
-    console.log(details);
+    stopLoader();
 
     document.title = `Square Eyes | ${details.name}`;
     movieProductContainer.innerHTML += `<section class="movie-cover">
@@ -38,6 +41,8 @@ async function getMovieDetails(movieUrl) {
                                             </div>
                                         </section>`;
   } catch (error) {
+    stopLoader();
+    movieProductContainer.innerHTML += `<div class="card error">An error has occured: ${error}</div>`;
     console.log(error);
   }
 }

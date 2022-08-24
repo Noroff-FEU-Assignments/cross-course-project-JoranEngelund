@@ -1,13 +1,16 @@
 const resultContainer = document.querySelector(".movie-section");
+const loader = document.querySelector(".loader");
 
 const url =
   "https://movies-api-squareeyes.engelund.site/wp-json/wc/store/products";
+
+const stopLoader = () => loader.classList.remove("loader");
 
 async function getMoviesApi() {
   try {
     const response = await fetch(url);
     const movies = await response.json();
-    console.log(movies);
+    stopLoader();
     movies.forEach(function (movies) {
       let movieRating = movies.attributes[0].terms[0].name;
       resultContainer.innerHTML += `<div class="movie-item">
@@ -19,6 +22,8 @@ async function getMoviesApi() {
                                     </div>`;
     });
   } catch (error) {
+    stopLoader();
+    resultContainer.innerHTML += `<div class="card error">An error has occured: ${error}</div>`;
     console.log(error);
   }
 }
