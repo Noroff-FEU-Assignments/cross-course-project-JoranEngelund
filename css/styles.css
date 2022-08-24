@@ -627,7 +627,7 @@ ul li {
   border-top: 16px solid #F54500;
   border-radius: 50%;
   margin-left: 43%;
-  animation: 2s loader linear infinite;
+  animation: 1s loader ease-in-out infinite;
 }
 
 @keyframes loader {
