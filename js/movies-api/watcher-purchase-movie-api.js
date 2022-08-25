@@ -7,15 +7,12 @@ const movieUrl =
 
 const movieProductContainer = document.querySelector(".create_account-page");
 const backBtnContainer = document.querySelector(".back");
-const loader = document.querySelector(".loader");
-
-const stopLoader = () => loader.classList.remove("loader");
 
 async function getMovieDetails(movieUrl) {
   try {
     const response = await fetch(movieUrl);
     const details = await response.json();
-    stopLoader();
+    movieProductContainer.innerHTML = "";
 
     document.title = `Square Eyes | ${details.name}`;
     backBtnContainer.innerHTML += `
@@ -125,7 +122,6 @@ async function getMovieDetails(movieUrl) {
           </div>
         </form>`;
   } catch (error) {
-    stopLoader();
     movieProductContainer.innerHTML += `<div class="card error">An error has occured: ${error}</div>`;
   }
 }

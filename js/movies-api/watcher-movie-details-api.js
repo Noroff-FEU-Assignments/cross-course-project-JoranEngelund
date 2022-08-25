@@ -8,13 +8,14 @@ const movieUrl =
 const movieProductContainer = document.querySelector(".movie-product");
 const loader = document.querySelector(".loader");
 
-const stopLoader = () => loader.classList.remove("loader");
+const hiddenLoader = () => loader.classList.remove("loader");
 
 async function getMovieDetails(movieUrl) {
   try {
     const response = await fetch(movieUrl);
     const details = await response.json();
-    stopLoader();
+    hiddenLoader();
+
     document.title = `Square Eyes | ${details.name}`;
     movieProductContainer.innerHTML += `<section class="movie-cover">
                                             <div>
@@ -40,7 +41,7 @@ async function getMovieDetails(movieUrl) {
                                             </div>
                                         </section>`;
   } catch (error) {
-    stopLoader();
+    hiddenLoader();
     movieProductContainer.innerHTML += `<div class="card error">An error has occured: ${error}</div>`;
     console.log(error);
   }
