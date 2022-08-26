@@ -10,7 +10,6 @@ async function getMoviesApi() {
   try {
     const response = await fetch(url);
     const movies = await response.json();
-    console.log(movies);
     stopLoader();
     movies.forEach(function (movies) {
       resultContainer.innerHTML += `
