@@ -31,7 +31,7 @@ async function getMovieDetails(movieUrl) {
     <h1 class="create_title purchase-info">Purchase Info</h1>
     <form
           method="get"
-          action="./purchase-successful-m.html${details.id}"
+          action="./purchase-successful.html?id=${details.id}"
           class="form_input purchaseForm"
         >
           <div class="form_input_type">
@@ -126,7 +126,11 @@ async function getMovieDetails(movieUrl) {
         </form>`;
   } catch (error) {
     stopLoader();
-    movieProductContainer.innerHTML += `<div class="card error">An error has occured: ${error}</div>`;
+    movieProductContainer.innerHTML += `<div class="card error">
+                                          <p>An error has occured:</p>
+                                          <p>Please return soon, while we resolve the issue. If you have any inqueries, do not hesitate to reach out on email: eyessquare@email.com</p>
+                                          <p>Thanks</p>
+                                        </div>`;
   }
 }
 

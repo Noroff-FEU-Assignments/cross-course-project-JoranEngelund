@@ -42,7 +42,12 @@ async function getMovieDetails(movieUrl) {
                                         </section>`;
   } catch (error) {
     hiddenLoader();
-    movieProductContainer.innerHTML += `<div class="card error">An error has occured: ${error}</div>`;
+    movieProductContainer.innerHTML += `<div class="card error">
+                                          <p>An error has occured:</p>
+                                          <p>Please return soon, while we resolve the issue. If you have any inqueries, do not hesitate to reach out on email:</p>
+                                          <p>eyessquare@email.com</p>
+                                          <p>Thanks</p>
+                                        </div>`;
     console.log(error);
   }
 }
