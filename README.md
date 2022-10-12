@@ -36,7 +36,7 @@ git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-JoranEngelu
 2. Install the dependencies:
 
 ```
-(GitHub Desktop)[https://desktop.github.com/]
+GitHub Desktop - https://desktop.github.com/
 Code Editor (example: Visual Studio Code)
 Live Server extension in Visual Studio Code
 ```
