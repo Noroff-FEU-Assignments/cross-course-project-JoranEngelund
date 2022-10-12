@@ -14,12 +14,19 @@ For the content producers: Financially benefitting from the films they've produc
 
 For content watchers: Supporting small filmmakers and discovering interesting films.
 
+## Design Process:
+- [Wireframe built with InvisionApp](https://www.invisionapp.com/)
+- Prototype built with Adobe Xd
+
 ## Built With
 
 - ```HTML5```
 - ```CSS3```
 - ```JavaScript```
 - ```WordPress REST API```
+
+## Project Grade:
+- ```A```
 
 ## Getting Started
 
