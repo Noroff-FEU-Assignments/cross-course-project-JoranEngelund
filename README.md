@@ -46,7 +46,7 @@ Live Server extension in Visual Studio Code
 To run the app, run the following commands:
 
 ```bash
-- Clone the repository in GitHub Desktop and open with Visual Studio Code from the menu.
+- Clone the repository in GitHub Desktop and open with Visual Studio Code from the menu (CTRL + SHIFT + A)
 - In Visual studio code, open the explorer menu on the right side (CTRL + SHIFT + E)
 - Run Live Server by right-clicking on a desired html file (ALT + L -> ALT + O)
 ```
