@@ -24,6 +24,8 @@ For content watchers: Supporting small filmmakers and discovering interesting fi
 - ```CSS3```
 - ```JavaScript```
 - ```WordPress REST API```
+- ```Web Accessibility```
+- ```SEO Optimilization```
 
 ## Project Grade:
 - ```A```
