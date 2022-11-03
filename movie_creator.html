@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="preload"
+      href="/fonts/OpenSans-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-SemiBoldItalic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The Movie page to the movie A Good Game"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/40442c7b29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Square Eyes</title>
+  </head>
+  <body>
+    <header class="movie-header">
+      <a href="./movies_creator.html" class="anchor-size"
+        ><img
+          class="logo-movies"
+          src="images/logo-no-copy.png"
+          alt="logo of square eyes"
+      /></a>
+      <nav class="header-navigation">
+        <div class="header-item">
+          <a href="/movies_creator.html">movies</a>
+        </div>
+        <div class="header-item">
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search movies"
+            class="form_input_field"
+          />
+        </div>
+        <div class="header-item profile-picture-small">
+          <a href="./profile_creator.html"
+            ><img
+              class="profile-picture-watcher-small"
+              src="./images/profile-picture-small-creator.png"
+              alt="profile picture of a user"
+          /></a>
+        </div>
+        <div class="header-item">
+          <a href="/login_creator.html"
+            ><i class="signout-icon fas fa-sign-out-alt"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="back">
+        <div>
+          <a href="./movies_creator.html" class="back_btn"
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+        </div>
+      </section>
+      <section class="producer-info">
+        <div class="container-producer-image">
+          <img
+            class="profile-image_producer"
+            src="./images/profile-picture-creator.png"
+            alt="profile picture of a user"
+          />
+        </div>
+        <h2 class="profile-name">Liam Ridley</h2>
+      </section>
+      <section class="movie-product"></section>
+      <div class="loader"></div>
+    </main>
+    <footer>
+      <a href="#" aria-label="Link to our Facebook page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-facebook-square"
+          title="Link to our Facebook"
+        ></i
+      ></a>
+      <a href="#" aria-label="Link to our Twitter page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-twitter-square"
+          title="Link to our Twitter page"
+        ></i
+      ></a>
+      <a href="#" aria-label="Link to our Instagram page"
+        ><i
+          aria-hidden="true"
+          class="fab fa-instagram"
+          title="Link to our Instragram page"
+        ></i
+      ></a>
+      <a href="/about.html" title="Link to our About page on this website"
+        >ABOUT</a
+      >
+      <a href="/contact.html" title="Link to our Contact page on this website"
+        >CONTACT</a
+      >
+    </footer>
+    <script
+      src="/js/search/searchMovieDescription_creator.js"
+      type="module"
+    ></script>
+    <script src="js/movies-api/creator-movie-details-api.js"></script>
+  </body>
+</html>

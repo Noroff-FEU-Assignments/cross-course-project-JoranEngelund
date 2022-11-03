@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="preload"
+      href="/fonts/OpenSans-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-SemiBoldItalic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The purchase successful page for the movie A Good Game"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/40442c7b29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Square Eyes | Purchase Successful</title>
+  </head>
+  <body>
+    <div class="blur">
+      <header class="centered-logo">
+        <a href="./movies_watcher.html" class="anchor-logo"
+          ><img
+            class="logo"
+            src="/images/logo-no-copy.png"
+            alt="logo of square eyes"
+        /></a>
+      </header>
+      <main>
+        <section class="back">
+          <div>
+            <a href="./movie1_watcher.html" class="back_btn"
+              ><i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+        </section>
+        <section class="create_account-page">
+          <img
+            src="./images/movie-1-purchase.png"
+            alt="The movie cover of the movie, A Good Game"
+          />
+          <h2 class="purchase-title">A Good Game</h2>
+          <h3 class="purchase-price">$ 25</h3>
+          <h2 class="create_title purchase-info">Purchase Info</h2>
+          <form
+            method="get"
+            action="./purchase-successful-w-m1.html"
+            class="form_input"
+          >
+            <div class="form_input_type">
+              <label for="firstname"><i class="fas fa-user"></i></label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Name *"
+                class="form_input_field"
+                required
+              />
+            </div>
+            <div class="form_input_type">
+              <label for="surname"><i class="fas fa-user"></i></label>
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Surname *"
+                class="form_input_field"
+                required
+              />
+            </div>
+            <div class="form_input_type">
+              <label for="cc"><i class="far fa-credit-card"></i></label>
+              <input
+                type="tel"
+                inputmode="numeric"
+                name="cc"
+                id="cc"
+                autocomplete="cc-number"
+                maxlength="19"
+                placeholder="**** **** **** ****"
+                class="form_input_field"
+                required
+              />
+            </div>
+            <div class="form_input_type">
+              <label for="date"><i class="fas fa-calendar-day"></i></label>
+              <input
+                type="tel"
+                name="date"
+                id="date"
+                autocomplete="cc-exp"
+                placeholder="MM/YY *"
+                class="form_input_field"
+                required
+                maxlength="5"
+              />
+            </div>
+            <div class="form_input_type">
+              <label for="cvc"><i class="far fa-credit-card"></i></label>
+              <input
+                type="tel"
+                name="cvc"
+                id="cvc"
+                autocomplete="cc-csc"
+                placeholder="CVC *"
+                class="form_input_field"
+                required
+                maxlength="3"
+              />
+            </div>
+            <div>
+              <div class="login-btn">
+                <button type="submit" class="cta cta-create_account-medium">
+                  <i class="far fa-credit-card"></i> Buy Now
+                </button>
+              </div>
+              <div class="login-btn">
+                <a
+                  href="./movie1_watcher.html"
+                  class="cta cta-create_account-small"
+                  ><i class="fas fa-times"></i> Cancel</a
+                >
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <a href="#" aria-label="Link to our Facebook page"
+          ><i
+            aria-hidden="true"
+            class="fab fa-facebook-square"
+            title="Link to our Facebook"
+          ></i
+        ></a>
+        <a href="#" aria-label="Link to our Twitter page"
+          ><i
+            aria-hidden="true"
+            class="fab fa-twitter-square"
+            title="Link to our Twitter page"
+          ></i
+        ></a>
+        <a href="#" aria-label="Link to our Instagram page"
+          ><i
+            aria-hidden="true"
+            class="fab fa-instagram"
+            title="Link to our Instragram page"
+          ></i
+        ></a>
+        <a href="/about.html" title="Link to our About page on this website"
+          >ABOUT</a
+        >
+        <a href="/contact.html" title="Link to our Contact page on this website"
+          >CONTACT</a
+        >
+      </footer>
+    </div>
+    <div class="purchase-successful">
+      <h1 class="purchase-copy">Purchase Successful!</h1>
+      <h2 class="purchase-copy">Thanks for supporting</h2>
+      <h2 class="purchase-copy">A Good Game</h2>
+      <img
+        src="./images/movie-1-purchase.png"
+        alt="cover of the movie, A Good Game"
+      />
+      <h3>You can now watch this movie whenever you want</h3>
+      <h3>Remember to check out the creator of the movie</h3>
+      <h3>Please leave the movie a rating</h3>
+      <a href="./movie1_watcher.html" class="cta cta_play-now"
+        ><i class="fas fa-play"></i> Play Now</a
+      >
+    </div>
+  </body>
+</html>

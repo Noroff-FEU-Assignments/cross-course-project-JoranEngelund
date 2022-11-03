@@ -1,0 +1,1011 @@
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(/fonts/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Open Sans Semibold Italic";
+  src: url(/fonts/OpenSans-SemiBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Light Italic";
+  src: url(/fonts/OpenSans-LightItalic.ttf) format("truetype");
+}
+
+/*Color Palette*/
+/*
+#03173A - Main purple color
+#135375 - Secondary blue color
+#FAF7FF - Copy color
+#F54500 - Hover color
+#03173A - Border color
+*/
+
+/*Fonts*/
+/*
+"Open Sans Bold" - Main font
+"Open Sans Semibold Italic" - Secondary font
+""Open Sans Light Italic"" - Tertiary Font
+*/
+
+/*Global styles*/
+
+body,
+header,
+footer,
+.slogan,
+.content,
+.login,
+.contact_page,
+.create_account-page,
+.about-content,
+.header-navigation,
+.vertical-nav nav,
+.movie-section,
+.profile-info,
+.most-watched,
+.pay-price,
+.producer-info {
+  display: flex;
+}
+
+.slogan,
+.login,
+.contact_page,
+.create_account-page,
+.form_input_type,
+.producer-info {
+  align-items: center;
+}
+
+body,
+header {
+  background-color: #03173a;
+}
+
+body,
+.slogan,
+.login,
+.contact_page,
+.create_account-page,
+.about-content,
+.vertical-nav nav {
+  flex-direction: column;
+}
+
+body,
+.movie-image {
+  width: 100%;
+}
+
+footer,
+.slogan-copy {
+  font-size: 1.2em;
+}
+
+.about-title,
+.header-navigation,
+.vertical-nav nav,
+.genre-title,
+.price {
+  font-size: 2em;
+}
+
+.page-title,
+.genre-title,
+.upload {
+  width: calc(100%);
+}
+
+.slogan_title,
+.login-portal_img,
+.login,
+.contact_page,
+.create_account-page,
+.about-title,
+.movie-item,
+.most-watched,
+.purchase-successful {
+  text-align: center;
+}
+
+.movie-section, 
+.most-watched {
+  flex-wrap: wrap;
+}
+
+.movies, 
+.movie-product {
+  display: grid;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  color: #faf7ff;
+}
+
+header {
+  min-width: auto;
+  box-shadow: 0.625em 0.9375em 5.625em 0 black;
+}
+
+.movie-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logo,
+.logo-logged-in {
+  max-width: 55%;
+}
+
+a {
+  text-decoration: none;
+  color: #faf7ff;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer,
+.content {
+  justify-content: center;
+}
+
+/*Hackery, some cta's and forms won't get the "Open Sans" font applied, so I need to "hardcode it in*/
+.cta,
+.form_input,
+.form_input_field {
+  font-family: "Open Sans Bold", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cta,
+.login-title,
+.header-item {
+  text-transform: uppercase;
+}
+
+footer a {
+  color: #faf7ff;
+  padding: 0.625em;
+}
+
+/*Buttons*/
+.cta {
+  color: #03173a;
+  background-color: #ffffff;
+  border: 4px solid #03173a;
+  box-shadow: 0 3px 6px 0 black;
+  padding: 2px 33px;
+  border-radius: 17px;
+}
+
+.cta:hover {
+  box-shadow: inset 25px 25px 100px #f54500, 0 3px 6px 0 black;
+}
+
+.back_btn {
+  color: white;
+  margin: 8px auto auto 10px;
+}
+
+.cta,
+.back_btn {
+  font-size: 1.9em;
+}
+
+.cta-login-medium {
+  padding: 7px 39px;
+}
+
+.cta-login-small {
+  padding: 7px 19px;
+}
+
+.contact-btn {
+  margin: 15px auto;
+}
+
+.cta_play-now,
+.cta-login-medium {
+  font-size: 1em;
+}
+
+.cta-create_account-medium,
+.cta-login-small {
+  font-size: 0.9em;
+}
+
+.cta-create_account-medium {
+  padding: 10px 10px;
+}
+
+.cta-create_account-small {
+  font-size: 0.8em;
+  padding: 7px 15px;
+}
+
+.afterRegisterCta {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.cta_play-now {
+  padding: 5px 23px;
+}
+
+.cta-profile {
+  padding: 2px 6px;
+  border-radius: 9px;
+  font-size: 0.7em;
+}
+
+.pay-per-view {
+  font-size: 1.5em;
+  margin-right: 50px;
+}
+
+/*Home page*/
+
+.slogan_title {
+  font-size: 5em;
+  margin: 30px auto 15px auto;
+  font-family: "Open Sans Light Italic", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+  max-width: 1072px;
+  margin: 0px auto;
+}
+
+.login-portal_img {
+  margin: auto 5em;
+}
+
+.login-img {
+  max-width: 100%;
+  margin: 0 0 5px;
+}
+
+.login_anchor-image {
+  display: block;
+}
+
+.slogan-copy {
+  font-family: "Open Sans Semibold Italic";
+}
+
+/*Login page*/
+
+.login,
+.contact_page,
+.create_account-page {
+  max-width: 1072px;
+  margin: 0px auto;
+}
+
+.login__img {
+  max-width: 60%;
+  margin: 0px auto -5px auto;
+}
+
+.form_input_field {
+  color: #faf7ff;
+  background-color: #03173a;
+  border: none;
+  border-bottom: 2px solid #faf7ff;
+  margin: 5px auto;
+  border-radius: 0;
+}
+
+.form-label {
+  color: #faf7ff;
+}
+
+.form_input_type {
+  display: block;
+  gap: 5px;
+}
+
+.login-btn {
+  margin: 20px auto;
+}
+
+.login-title {
+  margin: 10px auto;
+}
+
+/*About page*/
+
+.about-content {
+  font-size: 1.1em;
+  text-align: left;
+  margin: -19px 100px auto;
+}
+
+/*Contact page*/
+
+.contact_title,
+.create_title,
+.page-title {
+  font-size: 3em;
+}
+
+.contactFormError {
+  display: none;
+    border-radius: 10px;
+    background: red;
+    padding: 7px 7px;
+    font-size: 0.8rem;
+    margin: 5px auto;
+}
+
+.successMessage {
+  display: none;
+    border-radius: 10px;
+    background: green;
+    font-size: 0.9rem;
+    padding: 10px 10px;
+}
+
+.contact_title, .successMessage {
+  margin: 12px 10px;
+}
+
+.browseMore {
+  display: none;
+  margin: 6px auto 18px auto;
+}
+/*Movie page*/
+
+.anchor-size {
+  width: 114px;
+}
+
+.logo-movies {
+  width: 151%;
+}
+
+.movie-header {
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.header-navigation {
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.header-item {
+  padding: 0 15px 0 0;
+}
+
+#search {
+  font-size: 0.7em;
+}
+
+.profile-picture-small {
+  margin-bottom: -9px;
+  width: 9%;
+}
+
+.userIcon {
+  margin-bottom: 2px;
+}
+
+.loginIcon {
+  font-size: 1.3em;
+}
+
+.profile-picture-watcher-small {
+  width: 90%;
+}
+
+.signout-icon {
+  font-size: 1.4em;
+}
+
+.movies {
+  grid-template-areas: "vertical-nav movies movies movies movies";
+}
+
+.vertical-nav {
+  grid-area: vertical-nav;
+  background-color: #135375;
+  min-width: 290px;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+}
+
+.hamburger-icon {
+  margin-left: -15px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.vertical-nav nav {
+  text-align: left;
+}
+
+.vertical-nav nav h2 {
+  margin: 23px auto auto 36px;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px auto;
+  font-size: 0.8em;
+}
+
+.movie-section {
+  grid-area: movies;
+  margin: auto auto auto 291px;
+}
+
+.movie-item {
+  width: calc(33.3333% - 10px);
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.page-title,
+.genre-title {
+  margin: 25px auto 0px 41px;
+}
+
+.genre-title {
+  margin-bottom: -25px;
+}
+
+.movie-cover {
+  width: 95%;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  margin: 16px auto;
+}
+
+.movie-rating {
+  font-size: 1.5em;
+}
+
+/*Profile page*/
+
+.profile-info {
+  margin: 27px 27px auto;
+  flex-grow: 1;
+}
+
+.profile-item-1 {
+  width: calc(23.5%);
+}
+
+.profile-name {
+  font-size: 2.2em;
+}
+
+.profile-item-2 {
+  width: calc(37.5%);
+}
+
+.profile-item-3 {
+  width: calc(50%);
+}
+
+.most-watched {
+  border-radius: 20px;
+  margin: auto;
+  width: 59%;
+  box-shadow: 0 3px 6px black;
+}
+
+.profile-movies {
+  width: calc(25% - 10px);
+  padding: 20px;
+}
+
+.profile-movie-rating,
+.profile-movie-title,
+.profile_cta-play-now {
+  font-size: 0.7em;
+}
+
+.profile-movie-title {
+  margin: 5px auto;
+}
+
+.most-watched-movies {
+  font-size: 1.8em;
+  margin: auto;
+}
+
+.profile_cta-play-now {
+  padding: 1px 6px;
+}
+
+.upload {
+  margin-bottom: 19px;
+}
+
+/*Movie-Product*/
+
+.movie-product {
+  grid-template-areas: "movie-cover movie-info";
+}
+
+.movie-cover {
+  grid-area: movie-cover;
+}
+
+.movie-product-title {
+  font-size: 2.5em;
+  margin: auto;
+}
+
+.movie-info {
+  grid-area: movie-info;
+}
+
+.pay-per-view_container {
+  align-self: center;
+}
+
+.container-producer-image {
+  width: 12%;
+}
+
+.profile-image_producer {
+  width: 95%;
+}
+
+/*Purchase page*/
+
+.purchase-title,
+.purchase-price {
+  margin: auto;
+}
+
+.purchase-info {
+  margin: 10px auto;
+}
+
+/*Purchase-successful*/
+
+.blur {
+  filter: blur(10px);
+  position: relative;
+  box-shadow: inset 0 0 0 100vw rgb(0 0 0 / 50%);
+}
+
+.purchase-successful {
+  position: absolute;
+  background-color: rgba(19, 83, 117, 43%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 474px;
+  border-radius: 52px;
+  padding: 20px;
+}
+
+
+/*Active navigation*/
+
+.active {
+  text-decoration: underline;
+}
+
+.card {
+  width: calc(46.33% - -10px);
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  border: 2px solid #F54500;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.error {
+  font-size: 1.5rem;
+  background-color: red;
+  padding: 1rem;
+}
+
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 16px solid #03173A;
+  border-top: 16px solid #F54500;
+  border-radius: 50%;
+  margin-left: 43%;
+  animation: 1s loader ease-in-out infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Screen resize----------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 990px) {
+
+  .about-content,
+  .movie-product {
+    display: flex;
+  }
+
+  .about-content,
+  .movie-product {
+    flex-direction: column;
+  }
+
+  .centered-logo,
+  .content,
+  .profile-info {
+    justify-content: center;
+  }
+
+  .contact_title,
+  .create_title,
+  .slogan_title,
+  .hamburger-icon,
+  .genre-title,
+  .movie-product-title {
+    font-size: 2em;
+  }
+
+  .page-title,
+  .genre-title,
+  .profile-info,
+  .movie-product {
+    text-align: center;
+  }
+
+  .anchor-logo {
+    margin-left: 153px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    margin: auto 30px;
+  }
+
+  .login-img {
+    max-width: 75%;
+    margin: 20px 0 20px 0px;
+  }
+
+  .slogan_title {
+    margin: 30px auto auto;
+  }
+
+  .cta {
+    font-size: 1.25em;
+    padding: 1px 30px;
+  }
+
+  .cta:active,
+  .cta:hover {
+    box-shadow: inset 25px 25px 100px #f54500, 0 3px 6px 0 black;
+  }
+
+  footer {
+    font-size: 1.0625em;
+  }
+
+  .slogan-copy {
+    font-size: 0.9375em;
+  }
+
+  .copy-2 {
+    margin: 27px auto auto;
+  }
+
+  /*Login Page*/
+
+  .cta-login-medium {
+    font-size: 0.9em;
+    padding: 6px 35px;
+  }
+
+  .cta-login-small {
+    font-size: 0.8em;
+    padding: 6px 18px;
+  }
+
+  /*About page*/
+
+  .about-content {
+    font-size: 0.91em;
+    text-align: left;
+    margin: -32px 58px auto;
+  }
+
+  /*Create Account page*/
+
+  .cta-create_account-medium {
+    font-size: 0.6em;
+    padding: 7px 4px;
+  }
+
+  .cta-create_account-small {
+    font-size: 0.5em;
+    padding: 6px 15px;
+  }
+
+  .afterRegisterCta {
+    font-size: 1em;
+    padding: 10px 10px;
+  }
+  /*Movie page*/
+
+  
+
+  .header-navigation {
+    font-size: 1.5em;
+  }
+
+  .profile-picture-small {
+    width: 15%;
+  }
+
+  .vertical-nav {
+    margin-left: -290px;
+  }
+
+  .hamburger-icon {
+    margin-left: 0;
+    position: fixed;
+    transform: rotate(90deg);
+    top: 350px;
+    z-index: 2;
+  }
+
+  #hamburger-menu:checked ~ .vertical-nav {
+    display: block;
+    margin-left: 0;
+    z-index: 1;
+    background-color: rgba(19, 83, 117, 90%);
+    top: 218px;
+    height: 315px;
+    min-width: 205px;
+  }
+
+  .vertical-nav nav {
+    font-size: 1.5em;
+  }
+
+  .vertical-nav nav h2 {
+    display: none;
+  }
+
+  .movie-section {
+    margin: auto;
+  }
+
+  .cta_play-now {
+    padding: 1px 10px;
+  }
+
+  .movie-item {
+    width: calc(50% - 10px);
+    padding: 10px;
+  }
+
+  .movie-cover {
+    width: 85%;
+  }
+
+  .page-title,
+  .genre-title {
+    margin: 32px auto 0px;
+  }
+
+  .page-title {
+    font-size: 3em;
+  }
+
+  .movie-title,
+  .quote,
+  .pay-per-view,
+  .cta_play-now {
+    font-size: 1em;
+  }
+
+  .movie-rating,
+  .profile-movie-title,
+  .profile_cta-play-now,
+  .movie-description {
+    font-size: 0.8em;
+  }
+  /*Profile page*/
+
+  .profile-info {
+    flex-wrap: wrap;
+    margin: 63px 27px auto;
+  }
+
+  .profile-picture-normal {
+    width: 100%;
+  }
+
+  .profile-name {
+    font-size: 1.7em;
+  }
+
+  .cta-profile {
+    font-size: 0.6em;
+    padding: 1px 2px;
+  }
+
+  .profile-item-2 {
+    width: calc(50%);
+  }
+
+  .most-watched-movies {
+    font-size: 1.3em;
+  }
+
+  /*Movie-product Page*/
+
+  .movie-cover {
+    align-self: center;
+  }
+
+  .movie-image {
+    width: 60%;
+  }
+
+  .producer-info {
+    margin-left: 30px;
+  }
+
+  .movie-info {
+    margin: auto 20px;
+  }
+
+  .pay-price {
+    flex-direction: column-reverse;
+    margin-bottom: 12px;
+  }
+
+  .pay-per-view_container {
+    margin-left: 53px;
+  }
+
+  .pay-per-view {
+    padding: 4px 15px;
+  }
+
+  .price {
+    margin: auto auto 11px auto;
+  }
+
+  /*Purchase Successful*/
+
+  .purchase-copy {
+    font-size: 1em;
+  }
+
+  .purchase-successful h3  {
+    font-size: 0.8em;
+  }
+  .purchase-successful h1 + h2 + h3 {
+    margin: 5px auto;
+  }
+
+  .purchase-successful img {
+    width: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+  /*Home page*/
+
+  .anchor-logo {
+    margin-left: 125px;
+  }
+
+  .slogan_title {
+    font-size: 1.8em;
+  }
+  /*About page*/
+
+  .about-content {
+    margin: -36px 13px auto;
+  }
+
+  /*Movie page*/
+
+  .logo-movies {
+    width: 90%;
+  }
+
+
+  .header-navigation,
+  .cta_play-now,
+  .movie-title,
+  .about-content,
+  .quote,
+  .most-watched-movies,
+  .movie-product-title {
+    font-size: 0.8em;
+  }
+
+  .vertical-nav nav,
+  .profile-name {
+    font-size: 1em;
+  }
+
+  .profile-picture-small {
+    margin-bottom: -6px;
+    width: 13%;
+  }
+
+  .hamburger-icon {
+    font-size: 1.3em;
+  }
+
+  #hamburger-menu:checked ~ .vertical-nav {
+    top: 241px;
+    height: 253px;
+    min-width: 140px;
+  }
+
+  .genre-title,
+  .price {
+    font-size: 1.5em;
+  }
+
+  .cta_play-now {
+    padding: 1px 7px;
+  }
+
+  /*Profile page*/
+
+  .profile-item-2 {
+    width: calc(70%);
+  }
+
+  .cta-profile,
+  .profile-movie-rating,
+  .profile-movie-title,
+  .profile_cta-play-now,
+  .movie-description {
+    font-size: 0.5em;
+  }
+
+  .cta-profile {
+    padding: 1px 2px;
+  }
+
+  /*Movie-product page*/
+
+  .movie-info {
+    margin: auto 10px;
+  }
+
+  /*Purchase successful */
+
+  .purchase-copy {
+    font-size: 0.6em;
+  }
+
+  .purchase-successful h3 {
+    font-size: 0.5em;
+  }
+  
+  
+}
